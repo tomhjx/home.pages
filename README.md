@@ -1,1 +1,1 @@
-# home.static
+# home.pages
