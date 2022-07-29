@@ -1,13 +1,13 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>疯狂的茶几 – Blog</title><link>/blog/</link><description>Recent content in Blog on 疯狂的茶几</description><generator>Hugo -- gohugo.io</generator><language>en-us</language><lastBuildDate>Fri, 21 Jan 2022 10:19:18 +0000</lastBuildDate><atom:link href="/blog/index.xml" rel="self" type="application/rss+xml"/><item><title>Releases: Redis 7.0.4 Release Notes</title><link>/releases/redis/7-0-4/</link><pubDate>Mon, 18 Jul 2022 13:05:11 +0000</pubDate><guid>/releases/redis/7-0-4/</guid><description>
-&lt;p>&lt;a href="https://github.com/redis/redis/releases/tag/7.0.4">https://github.com/redis/redis/releases/tag/7.0.4&lt;/a>&lt;/p>
 &lt;p>Upgrade urgency: SECURITY, contains fixes to security issues.&lt;/p>
 &lt;p>Security Fixes:&lt;/p>
 &lt;ul>
 &lt;li>(CVE-2022-31144) A specially crafted XAUTOCLAIM command on a stream
 key in a specific state may result with heap overflow, and potentially
 remote code execution. The problem affects Redis versions 7.0.0 or newer.&lt;/li>
-&lt;/ul></description></item><item><title>Releases: Redis 7.0.3 Release Notes</title><link>/releases/redis/7-0-3/</link><pubDate>Mon, 11 Jul 2022 14:46:59 +0000</pubDate><guid>/releases/redis/7-0-3/</guid><description>
-&lt;p>&lt;a href="https://github.com/redis/redis/releases/tag/7.0.3">https://github.com/redis/redis/releases/tag/7.0.3&lt;/a>&lt;/p>
+&lt;/ul>
+&lt;h2 id="reference">Reference&lt;/h2>
+&lt;p>&lt;a href="https://github.com/redis/redis/releases/tag/7.0.4">https://github.com/redis/redis/releases/tag/7.0.4&lt;/a>&lt;/p></description></item><item><title>Releases: Redis 7.0.3 Release Notes</title><link>/releases/redis/7-0-3/</link><pubDate>Mon, 11 Jul 2022 14:46:59 +0000</pubDate><guid>/releases/redis/7-0-3/</guid><description>
 &lt;p>Upgrade urgency: MODERATE, specifically if you&amp;rsquo;re using a previous release of
 Redis 7.0, contains fixes for bugs in previous 7.0 releases.&lt;/p>
 &lt;h2 id="performance-and-resource-utilization-improvements">Performance and resource utilization improvements&lt;/h2>
@@ -53,6 +53,8 @@ after a replica reboots (&lt;a href="https://github.com/redis/redis/pull/10798">
 &lt;li>redis-server command line allow passing config name and value in the same argument (&lt;a href="https://github.com/redis/redis/pull/10866">#10866&lt;/a>)&lt;/li>
 &lt;li>Support &amp;ndash;save command line argument with no value for backwards compatibility (&lt;a href="https://github.com/redis/redis/pull/10866">#10866&lt;/a>)&lt;/li>
 &lt;li>Fix CLUSTER RESET command regression requiring an argument (&lt;a href="https://github.com/redis/redis/pull/10898">#10898&lt;/a>)&lt;/li>
-&lt;/ul></description></item><item><title>Blog: This Is My Post2</title><link>/blog/this-is-my-post2/</link><pubDate>Fri, 21 Jan 2022 10:19:18 +0000</pubDate><guid>/blog/this-is-my-post2/</guid><description>
+&lt;/ul>
+&lt;h2 id="reference">Reference&lt;/h2>
+&lt;p>&lt;a href="https://github.com/redis/redis/releases/tag/7.0.3">https://github.com/redis/redis/releases/tag/7.0.3&lt;/a>&lt;/p></description></item><item><title>Blog: This Is My Post2</title><link>/blog/this-is-my-post2/</link><pubDate>Fri, 21 Jan 2022 10:19:18 +0000</pubDate><guid>/blog/this-is-my-post2/</guid><description>
 &lt;p>Hello, this is a my post 2 page.&lt;/p></description></item><item><title>Blog: This Is My Post1</title><link>/blog/this-is-my-post1/</link><pubDate>Fri, 21 Jan 2022 10:19:14 +0000</pubDate><guid>/blog/this-is-my-post1/</guid><description>
 &lt;p>Hello, this is a my post 2 page.&lt;/p></description></item></channel></rss>
