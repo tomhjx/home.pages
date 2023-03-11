@@ -10,7 +10,7 @@ var require = { paths: { vs: '/lib/monaco-editor/min/vs' } };
 &lt;script>
 $(function(){
 var modeId = 'go';
-var editor = monaco.editor.create(document.getElementById(blockID), {
+var editor = monaco.editor.create(document.getElementById('input'), {
 language: modeId
 });
 // init
