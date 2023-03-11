@@ -6,7 +6,7 @@ var require = { paths: { vs: '/lib/monaco-editor/min/vs' } };
 &lt;script src="/lib/monaco-editor/min/vs/loader.js">&lt;/script>
 &lt;script src="/lib/monaco-editor/min/vs/editor/editor.main.nls.js">&lt;/script>
 &lt;script src="/lib/monaco-editor/min/vs/editor/editor.main.js">&lt;/script>
-&lt;div class="btn-group p-2 mb-2" role="group">
+&lt;div class="input-group p-2 mb-2" role="group">
 &lt;select class="form-select form-select-sm" aria-label="Default select example">
 &lt;option value="1">One&lt;/option>
 &lt;option value="2">Two&lt;/option>
