@@ -1,6 +1,8 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Tom's Notebook – Tools</title><link>/tools/</link><description>Recent content in Tools on Tom's Notebook</description><generator>Hugo -- gohugo.io</generator><language>en-us</language><atom:link href="/tools/index.xml" rel="self" type="application/rss+xml"/><item><title>Tools: CSS</title><link>/tools/editor/css/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>/tools/editor/css/</guid><description>
 &lt;div id="editorcontainer0" class="td-box--height-full border w-100" >&lt;/div>
 &lt;script src="/lib/monaco-editor/min/vs/loader.js">&lt;/script>
+&lt;script src="/lib/monaco-editor/min/vs/editor/editor.main.nls.js">&lt;/script>
+&lt;script src="/lib/monaco-editor/min/vs/editor/editor.main.js">&lt;/script>
 &lt;script>
 $(function(){
 var blockID = "editorcontainer0";
@@ -484,6 +486,8 @@ Coming soon</description></item><item><title>Tools: Free Proxies used ClashX Con
 &lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div></description></item><item><title>Tools: HTML</title><link>/tools/editor/html/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>/tools/editor/html/</guid><description>
 &lt;div id="editorcontainer0" class="td-box--height-full border w-100" >&lt;/div>
 &lt;script src="/lib/monaco-editor/min/vs/loader.js">&lt;/script>
+&lt;script src="/lib/monaco-editor/min/vs/editor/editor.main.nls.js">&lt;/script>
+&lt;script src="/lib/monaco-editor/min/vs/editor/editor.main.js">&lt;/script>
 &lt;script>
 $(function(){
 var blockID = "editorcontainer0";
@@ -513,6 +517,8 @@ oldModel.dispose();
 &lt;/script></description></item><item><title>Tools: JavaScript</title><link>/tools/editor/javascript/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>/tools/editor/javascript/</guid><description>
 &lt;div id="editorcontainer0" class="td-box--height-full border w-100" >&lt;/div>
 &lt;script src="/lib/monaco-editor/min/vs/loader.js">&lt;/script>
+&lt;script src="/lib/monaco-editor/min/vs/editor/editor.main.nls.js">&lt;/script>
+&lt;script src="/lib/monaco-editor/min/vs/editor/editor.main.js">&lt;/script>
 &lt;script>
 $(function(){
 var blockID = "editorcontainer0";
@@ -543,6 +549,8 @@ oldModel.dispose();
 &lt;p>To learn more about &lt;a href="https://www.javascript.com/">JavaScript&lt;/a>&lt;/p></description></item><item><title>Tools: JSON</title><link>/tools/editor/json/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>/tools/editor/json/</guid><description>
 &lt;div id="editorcontainer0" class="td-box--height-full border w-100" >&lt;/div>
 &lt;script src="/lib/monaco-editor/min/vs/loader.js">&lt;/script>
+&lt;script src="/lib/monaco-editor/min/vs/editor/editor.main.nls.js">&lt;/script>
+&lt;script src="/lib/monaco-editor/min/vs/editor/editor.main.js">&lt;/script>
 &lt;script>
 $(function(){
 var blockID = "editorcontainer0";
@@ -615,6 +623,8 @@ Go &lt;label>&lt;input type="checkbox" id="inline" checked>Inline type definitio
 &lt;/table> --></description></item><item><title>Tools: LESS</title><link>/tools/editor/less/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>/tools/editor/less/</guid><description>
 &lt;div id="editorcontainer0" class="td-box--height-full border w-100" >&lt;/div>
 &lt;script src="/lib/monaco-editor/min/vs/loader.js">&lt;/script>
+&lt;script src="/lib/monaco-editor/min/vs/editor/editor.main.nls.js">&lt;/script>
+&lt;script src="/lib/monaco-editor/min/vs/editor/editor.main.js">&lt;/script>
 &lt;script>
 $(function(){
 var blockID = "editorcontainer0";
@@ -644,6 +654,8 @@ oldModel.dispose();
 &lt;/script></description></item><item><title>Tools: SCSS</title><link>/tools/editor/scss/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>/tools/editor/scss/</guid><description>
 &lt;div id="editorcontainer0" class="td-box--height-full border w-100" >&lt;/div>
 &lt;script src="/lib/monaco-editor/min/vs/loader.js">&lt;/script>
+&lt;script src="/lib/monaco-editor/min/vs/editor/editor.main.nls.js">&lt;/script>
+&lt;script src="/lib/monaco-editor/min/vs/editor/editor.main.js">&lt;/script>
 &lt;script>
 $(function(){
 var blockID = "editorcontainer0";
@@ -673,6 +685,8 @@ oldModel.dispose();
 &lt;/script></description></item><item><title>Tools: TypeScript</title><link>/tools/editor/typescript/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>/tools/editor/typescript/</guid><description>
 &lt;div id="editorcontainer0" class="td-box--height-full border w-100" >&lt;/div>
 &lt;script src="/lib/monaco-editor/min/vs/loader.js">&lt;/script>
+&lt;script src="/lib/monaco-editor/min/vs/editor/editor.main.nls.js">&lt;/script>
+&lt;script src="/lib/monaco-editor/min/vs/editor/editor.main.js">&lt;/script>
 &lt;script>
 $(function(){
 var blockID = "editorcontainer0";
