@@ -3,17 +3,17 @@
 &lt;script>
 var require = { paths: { vs: '/lib/monaco-editor/min/vs' } };
 &lt;/script>
-&lt;div id="editorcontainer0" class="td-box--height-full border w-100" >&lt;/div>
+&lt;div id="input" class="border w-100 h-80" >&lt;/div>
 &lt;script src="/lib/monaco-editor/min/vs/loader.js">&lt;/script>
 &lt;script src="/lib/monaco-editor/min/vs/editor/editor.main.nls.js">&lt;/script>
 &lt;script src="/lib/monaco-editor/min/vs/editor/editor.main.js">&lt;/script>
 &lt;script>
 $(function(){
-var blockID = "editorcontainer0";
 var modeId = 'go';
 var editor = monaco.editor.create(document.getElementById(blockID), {
 language: modeId
 });
+// init
 $.ajax({
 type: 'GET',
 url: "/resource/editor/example/go.txt",
