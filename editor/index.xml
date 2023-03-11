@@ -12,7 +12,7 @@ var require = { paths: { vs: '/lib/monaco-editor/min/vs' } };
 &lt;option value="2">Two&lt;/option>
 &lt;option value="3">Three&lt;/option>
 &lt;/select>
-&lt;button class="btn btn-outline-primary btn-sm" id="run" >Run&lt;/button>
+&lt;button class="btn btn-outline-primary btn-sm" id="runBtn" >Run&lt;/button>
 &lt;/div>
 &lt;div id="input" class="border w-100 p-2" style="height: 500px;" >&lt;/div>
 &lt;div id="output" class="w-100 p-2" data-bs-theme="dark" style="height: 200px;">&lt;/div>
@@ -37,6 +37,16 @@ editor.setModel(newModel);
 if (oldModel) {
 oldModel.dispose();
 }
+});
+$('#runBtn').click(function(){
+$.ajax({
+type: 'POST',
+url: 'https://go.dev/_/compile',
+data: {
+version: 2,
+body: editor.getModel().getValue()
+}
+})
 });
 })
 &lt;/script></description></item><item><title>Editor: Markdown Mermaid</title><link>/editor/markdown-mermaid/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>/editor/markdown-mermaid/</guid><description>
