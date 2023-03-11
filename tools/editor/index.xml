@@ -1,18 +1,18 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Tom's Notebook – Editor</title><link>/tools/editor/</link><description>Recent content in Editor on Tom's Notebook</description><generator>Hugo -- gohugo.io</generator><language>en-us</language><atom:link href="/tools/editor/index.xml" rel="self" type="application/rss+xml"/><item><title>Tools: CSS</title><link>/tools/editor/css/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>/tools/editor/css/</guid><description>
 &lt;div id="editorcontainer0" class="td-box--height-full border w-100" >&lt;/div>
-&lt;script src="https://microsoft.github.io/monaco-editor/node_modules/monaco-editor/min/vs/loader.js">&lt;/script>
+&lt;script src="/static/lib/monaco-editor/min/vs/loader.js">&lt;/script>
 &lt;script>
 $(function(){
 var blockID = "editorcontainer0";
 var modeId = 'css';
-require.config({ paths: { vs: 'https://microsoft.github.io/monaco-editor/node_modules/monaco-editor/min/vs' } });
+require.config({ paths: { vs: '/static/lib/monaco-editor/min/vs' } });
 require(['vs/editor/editor.main'], function () {
 var editor = monaco.editor.create(document.getElementById(blockID), {
 language: modeId
 });
 $.ajax({
 type: 'GET',
-url: "https://microsoft.github.io/monaco-editor/index/samples/sample.css.txt",
+url: "/data/editor/example/css.txt",
 dataType: 'text',
 error: function () {
 console.log("load "+blockID+"'s sample fail.")
@@ -29,19 +29,19 @@ oldModel.dispose();
 })
 &lt;/script></description></item><item><title>Tools: HTML</title><link>/tools/editor/html/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>/tools/editor/html/</guid><description>
 &lt;div id="editorcontainer0" class="td-box--height-full border w-100" >&lt;/div>
-&lt;script src="https://microsoft.github.io/monaco-editor/node_modules/monaco-editor/min/vs/loader.js">&lt;/script>
+&lt;script src="/static/lib/monaco-editor/min/vs/loader.js">&lt;/script>
 &lt;script>
 $(function(){
 var blockID = "editorcontainer0";
 var modeId = 'html';
-require.config({ paths: { vs: 'https://microsoft.github.io/monaco-editor/node_modules/monaco-editor/min/vs' } });
+require.config({ paths: { vs: '/static/lib/monaco-editor/min/vs' } });
 require(['vs/editor/editor.main'], function () {
 var editor = monaco.editor.create(document.getElementById(blockID), {
 language: modeId
 });
 $.ajax({
 type: 'GET',
-url: "https://microsoft.github.io/monaco-editor/index/samples/sample.html.txt",
+url: "/data/editor/example/html.txt",
 dataType: 'text',
 error: function () {
 console.log("load "+blockID+"'s sample fail.")
@@ -58,19 +58,19 @@ oldModel.dispose();
 })
 &lt;/script></description></item><item><title>Tools: JavaScript</title><link>/tools/editor/javascript/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>/tools/editor/javascript/</guid><description>
 &lt;div id="editorcontainer0" class="td-box--height-full border w-100" >&lt;/div>
-&lt;script src="https://microsoft.github.io/monaco-editor/node_modules/monaco-editor/min/vs/loader.js">&lt;/script>
+&lt;script src="/static/lib/monaco-editor/min/vs/loader.js">&lt;/script>
 &lt;script>
 $(function(){
 var blockID = "editorcontainer0";
 var modeId = 'javascript';
-require.config({ paths: { vs: 'https://microsoft.github.io/monaco-editor/node_modules/monaco-editor/min/vs' } });
+require.config({ paths: { vs: '/static/lib/monaco-editor/min/vs' } });
 require(['vs/editor/editor.main'], function () {
 var editor = monaco.editor.create(document.getElementById(blockID), {
 language: modeId
 });
 $.ajax({
 type: 'GET',
-url: "https://microsoft.github.io/monaco-editor/index/samples/sample.javascript.txt",
+url: "/data/editor/example/javascript.txt",
 dataType: 'text',
 error: function () {
 console.log("load "+blockID+"'s sample fail.")
@@ -88,19 +88,19 @@ oldModel.dispose();
 &lt;/script>
 &lt;p>To learn more about &lt;a href="https://www.javascript.com/">JavaScript&lt;/a>&lt;/p></description></item><item><title>Tools: JSON</title><link>/tools/editor/json/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>/tools/editor/json/</guid><description>
 &lt;div id="editorcontainer0" class="td-box--height-full border w-100" >&lt;/div>
-&lt;script src="https://microsoft.github.io/monaco-editor/node_modules/monaco-editor/min/vs/loader.js">&lt;/script>
+&lt;script src="/static/lib/monaco-editor/min/vs/loader.js">&lt;/script>
 &lt;script>
 $(function(){
 var blockID = "editorcontainer0";
 var modeId = 'json';
-require.config({ paths: { vs: 'https://microsoft.github.io/monaco-editor/node_modules/monaco-editor/min/vs' } });
+require.config({ paths: { vs: '/static/lib/monaco-editor/min/vs' } });
 require(['vs/editor/editor.main'], function () {
 var editor = monaco.editor.create(document.getElementById(blockID), {
 language: modeId
 });
 $.ajax({
 type: 'GET',
-url: "https://microsoft.github.io/monaco-editor/index/samples/sample.json.txt",
+url: "/data/editor/example/json.txt",
 dataType: 'text',
 error: function () {
 console.log("load "+blockID+"'s sample fail.")
@@ -118,19 +118,19 @@ oldModel.dispose();
 &lt;/script>
 &lt;p>To learn more about &lt;a href="https://www.json.org/json-en.html">JSON&lt;/a>&lt;/p></description></item><item><title>Tools: LESS</title><link>/tools/editor/less/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>/tools/editor/less/</guid><description>
 &lt;div id="editorcontainer0" class="td-box--height-full border w-100" >&lt;/div>
-&lt;script src="https://microsoft.github.io/monaco-editor/node_modules/monaco-editor/min/vs/loader.js">&lt;/script>
+&lt;script src="/static/lib/monaco-editor/min/vs/loader.js">&lt;/script>
 &lt;script>
 $(function(){
 var blockID = "editorcontainer0";
 var modeId = 'less';
-require.config({ paths: { vs: 'https://microsoft.github.io/monaco-editor/node_modules/monaco-editor/min/vs' } });
+require.config({ paths: { vs: '/static/lib/monaco-editor/min/vs' } });
 require(['vs/editor/editor.main'], function () {
 var editor = monaco.editor.create(document.getElementById(blockID), {
 language: modeId
 });
 $.ajax({
 type: 'GET',
-url: "https://microsoft.github.io/monaco-editor/index/samples/sample.less.txt",
+url: "/data/editor/example/less.txt",
 dataType: 'text',
 error: function () {
 console.log("load "+blockID+"'s sample fail.")
@@ -147,19 +147,19 @@ oldModel.dispose();
 })
 &lt;/script></description></item><item><title>Tools: SCSS</title><link>/tools/editor/scss/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>/tools/editor/scss/</guid><description>
 &lt;div id="editorcontainer0" class="td-box--height-full border w-100" >&lt;/div>
-&lt;script src="https://microsoft.github.io/monaco-editor/node_modules/monaco-editor/min/vs/loader.js">&lt;/script>
+&lt;script src="/static/lib/monaco-editor/min/vs/loader.js">&lt;/script>
 &lt;script>
 $(function(){
 var blockID = "editorcontainer0";
 var modeId = 'scss';
-require.config({ paths: { vs: 'https://microsoft.github.io/monaco-editor/node_modules/monaco-editor/min/vs' } });
+require.config({ paths: { vs: '/static/lib/monaco-editor/min/vs' } });
 require(['vs/editor/editor.main'], function () {
 var editor = monaco.editor.create(document.getElementById(blockID), {
 language: modeId
 });
 $.ajax({
 type: 'GET',
-url: "https://microsoft.github.io/monaco-editor/index/samples/sample.scss.txt",
+url: "/data/editor/example/scss.txt",
 dataType: 'text',
 error: function () {
 console.log("load "+blockID+"'s sample fail.")
@@ -176,19 +176,19 @@ oldModel.dispose();
 })
 &lt;/script></description></item><item><title>Tools: TypeScript</title><link>/tools/editor/typescript/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>/tools/editor/typescript/</guid><description>
 &lt;div id="editorcontainer0" class="td-box--height-full border w-100" >&lt;/div>
-&lt;script src="https://microsoft.github.io/monaco-editor/node_modules/monaco-editor/min/vs/loader.js">&lt;/script>
+&lt;script src="/static/lib/monaco-editor/min/vs/loader.js">&lt;/script>
 &lt;script>
 $(function(){
 var blockID = "editorcontainer0";
 var modeId = 'typescript';
-require.config({ paths: { vs: 'https://microsoft.github.io/monaco-editor/node_modules/monaco-editor/min/vs' } });
+require.config({ paths: { vs: '/static/lib/monaco-editor/min/vs' } });
 require(['vs/editor/editor.main'], function () {
 var editor = monaco.editor.create(document.getElementById(blockID), {
 language: modeId
 });
 $.ajax({
 type: 'GET',
-url: "https://microsoft.github.io/monaco-editor/index/samples/sample.typescript.txt",
+url: "/data/editor/example/typescript.txt",
 dataType: 'text',
 error: function () {
 console.log("load "+blockID+"'s sample fail.")
