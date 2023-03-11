@@ -6,7 +6,7 @@ $(function(){
 var blockID = "editorcontainer0";
 var modeId = 'css';
 require.config({ paths: { vs: '/lib/monaco-editor/min/vs' } });
-require(['vs/editor/editor.main'], function () {
+require([], function () {
 var editor = monaco.editor.create(document.getElementById(blockID), {
 language: modeId
 });
@@ -489,7 +489,7 @@ $(function(){
 var blockID = "editorcontainer0";
 var modeId = 'html';
 require.config({ paths: { vs: '/lib/monaco-editor/min/vs' } });
-require(['vs/editor/editor.main'], function () {
+require([], function () {
 var editor = monaco.editor.create(document.getElementById(blockID), {
 language: modeId
 });
@@ -518,7 +518,7 @@ $(function(){
 var blockID = "editorcontainer0";
 var modeId = 'javascript';
 require.config({ paths: { vs: '/lib/monaco-editor/min/vs' } });
-require(['vs/editor/editor.main'], function () {
+require([], function () {
 var editor = monaco.editor.create(document.getElementById(blockID), {
 language: modeId
 });
@@ -548,7 +548,7 @@ $(function(){
 var blockID = "editorcontainer0";
 var modeId = 'json';
 require.config({ paths: { vs: '/lib/monaco-editor/min/vs' } });
-require(['vs/editor/editor.main'], function () {
+require([], function () {
 var editor = monaco.editor.create(document.getElementById(blockID), {
 language: modeId
 });
@@ -620,7 +620,7 @@ $(function(){
 var blockID = "editorcontainer0";
 var modeId = 'less';
 require.config({ paths: { vs: '/lib/monaco-editor/min/vs' } });
-require(['vs/editor/editor.main'], function () {
+require([], function () {
 var editor = monaco.editor.create(document.getElementById(blockID), {
 language: modeId
 });
@@ -649,7 +649,7 @@ $(function(){
 var blockID = "editorcontainer0";
 var modeId = 'scss';
 require.config({ paths: { vs: '/lib/monaco-editor/min/vs' } });
-require(['vs/editor/editor.main'], function () {
+require([], function () {
 var editor = monaco.editor.create(document.getElementById(blockID), {
 language: modeId
 });
@@ -678,7 +678,7 @@ $(function(){
 var blockID = "editorcontainer0";
 var modeId = 'typescript';
 require.config({ paths: { vs: '/lib/monaco-editor/min/vs' } });
-require(['vs/editor/editor.main'], function () {
+require([], function () {
 var editor = monaco.editor.create(document.getElementById(blockID), {
 language: modeId
 });
