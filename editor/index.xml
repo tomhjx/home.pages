@@ -11,7 +11,6 @@ var require = { paths: { vs: '/lib/monaco-editor/min/vs' } };
 $(function(){
 var blockID = "editorcontainer0";
 var modeId = 'go';
-require(['vs/editor/editor.main'], function () {
 var editor = monaco.editor.create(document.getElementById(blockID), {
 language: modeId
 });
@@ -29,7 +28,6 @@ editor.setModel(newModel);
 if (oldModel) {
 oldModel.dispose();
 }
-});
 });
 })
 &lt;/script></description></item><item><title>Editor: Markdown Mermaid</title><link>/editor/markdown-mermaid/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>/editor/markdown-mermaid/</guid><description>

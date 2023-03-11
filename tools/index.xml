@@ -11,7 +11,6 @@ var require = { paths: { vs: '/lib/monaco-editor/min/vs' } };
 $(function(){
 var blockID = "editorcontainer0";
 var modeId = 'css';
-require(['vs/editor/editor.main'], function () {
 var editor = monaco.editor.create(document.getElementById(blockID), {
 language: modeId
 });
@@ -29,7 +28,6 @@ editor.setModel(newModel);
 if (oldModel) {
 oldModel.dispose();
 }
-});
 });
 })
 &lt;/script></description></item><item><title>Tools: CURL to GO</title><link>/tools/formatter/curl2to/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>/tools/formatter/curl2to/</guid><description>
@@ -499,7 +497,6 @@ var require = { paths: { vs: '/lib/monaco-editor/min/vs' } };
 $(function(){
 var blockID = "editorcontainer0";
 var modeId = 'html';
-require(['vs/editor/editor.main'], function () {
 var editor = monaco.editor.create(document.getElementById(blockID), {
 language: modeId
 });
@@ -518,7 +515,6 @@ if (oldModel) {
 oldModel.dispose();
 }
 });
-});
 })
 &lt;/script></description></item><item><title>Tools: JavaScript</title><link>/tools/editor/javascript/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>/tools/editor/javascript/</guid><description>
 &lt;link rel="stylesheet" data-name="vs/editor/editor.main" href="/lib/monaco-editor/min/vs/editor/editor.main.css" />
@@ -533,7 +529,6 @@ var require = { paths: { vs: '/lib/monaco-editor/min/vs' } };
 $(function(){
 var blockID = "editorcontainer0";
 var modeId = 'javascript';
-require(['vs/editor/editor.main'], function () {
 var editor = monaco.editor.create(document.getElementById(blockID), {
 language: modeId
 });
@@ -552,7 +547,6 @@ if (oldModel) {
 oldModel.dispose();
 }
 });
-});
 })
 &lt;/script>
 &lt;p>To learn more about &lt;a href="https://www.javascript.com/">JavaScript&lt;/a>&lt;/p></description></item><item><title>Tools: JSON</title><link>/tools/editor/json/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>/tools/editor/json/</guid><description>
@@ -568,7 +562,6 @@ var require = { paths: { vs: '/lib/monaco-editor/min/vs' } };
 $(function(){
 var blockID = "editorcontainer0";
 var modeId = 'json';
-require(['vs/editor/editor.main'], function () {
 var editor = monaco.editor.create(document.getElementById(blockID), {
 language: modeId
 });
@@ -586,7 +579,6 @@ editor.setModel(newModel);
 if (oldModel) {
 oldModel.dispose();
 }
-});
 });
 })
 &lt;/script>
@@ -645,7 +637,6 @@ var require = { paths: { vs: '/lib/monaco-editor/min/vs' } };
 $(function(){
 var blockID = "editorcontainer0";
 var modeId = 'less';
-require(['vs/editor/editor.main'], function () {
 var editor = monaco.editor.create(document.getElementById(blockID), {
 language: modeId
 });
@@ -664,7 +655,6 @@ if (oldModel) {
 oldModel.dispose();
 }
 });
-});
 })
 &lt;/script></description></item><item><title>Tools: SCSS</title><link>/tools/editor/scss/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>/tools/editor/scss/</guid><description>
 &lt;link rel="stylesheet" data-name="vs/editor/editor.main" href="/lib/monaco-editor/min/vs/editor/editor.main.css" />
@@ -679,7 +669,6 @@ var require = { paths: { vs: '/lib/monaco-editor/min/vs' } };
 $(function(){
 var blockID = "editorcontainer0";
 var modeId = 'scss';
-require(['vs/editor/editor.main'], function () {
 var editor = monaco.editor.create(document.getElementById(blockID), {
 language: modeId
 });
@@ -698,7 +687,6 @@ if (oldModel) {
 oldModel.dispose();
 }
 });
-});
 })
 &lt;/script></description></item><item><title>Tools: TypeScript</title><link>/tools/editor/typescript/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>/tools/editor/typescript/</guid><description>
 &lt;link rel="stylesheet" data-name="vs/editor/editor.main" href="/lib/monaco-editor/min/vs/editor/editor.main.css" />
@@ -713,7 +701,6 @@ var require = { paths: { vs: '/lib/monaco-editor/min/vs' } };
 $(function(){
 var blockID = "editorcontainer0";
 var modeId = 'typescript';
-require(['vs/editor/editor.main'], function () {
 var editor = monaco.editor.create(document.getElementById(blockID), {
 language: modeId
 });
@@ -731,7 +718,6 @@ editor.setModel(newModel);
 if (oldModel) {
 oldModel.dispose();
 }
-});
 });
 })
 &lt;/script>
