@@ -47,7 +47,8 @@ var editor;
 $(function(){
 var modeId = 'go';
 editor = monaco.editor.create(document.getElementById('editorcontainer0'), {
-language: modeId
+language: modeId,
+automaticLayout: true
 });
 $.ajax({
 type: 'GET',
