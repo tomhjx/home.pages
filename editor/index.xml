@@ -12,10 +12,6 @@ var editor;
 $(function(){
 require(['vs/editor/editor.main'], function () {
 editor = monaco.editor.createDiffEditor(document.getElementById('editorcontainer0'));
-editor.setModel({
-original: monaco.editor.createModel('', 'javascript'),
-modified: monaco.editor.createModel('', 'javascript')
-});
 });
 });
 &lt;/script></description></item><item><title>Editor: Go</title><link>/editor/go/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>/editor/go/</guid><description>
