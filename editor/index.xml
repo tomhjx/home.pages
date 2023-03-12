@@ -44,7 +44,7 @@ oldModel.dispose();
 });
 })
 &lt;/script>
-&lt;div id="output" class="w-100 p-2" data-bs-theme="dark" style="height: 200px;">&lt;/div>
+&lt;div id="output" class="w-100 p-2 primary" style="height: 200px;">&lt;/div>
 &lt;script>
 $(function(){
 $('#runBtn').click(function(){
