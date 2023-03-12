@@ -11,10 +11,10 @@ var editor;
 &lt;script>
 $(function(){
 require(['vs/editor/editor.main'], function () {
-editor = monaco.editor.createDiffEditor(document.getElementById('editorcontainer0'));
+editor = monaco.editor.createDiffEditor(document.getElementById('editorcontainer0'), {readOnly:false});
 editor.setModel({
-original: monaco.editor.createModel('a', 'javascript'),
-modified: monaco.editor.createModel('b', 'javascript')
+original: monaco.editor.createModel('a', 'text/plain'),
+modified: monaco.editor.createModel('b', 'text/plain')
 });
 });
 });
