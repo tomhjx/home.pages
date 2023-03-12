@@ -93,7 +93,7 @@ var editor;
 &lt;script src="/lib/monaco-editor/min/vs/editor/editor.main.js">&lt;/script>
 &lt;script>
 $(function(){
-var modeId = 'typescript';
+var modeId = 'javascript';
 editor = monaco.editor.create(document.getElementById('editorcontainer0'), {
 language: modeId,
 automaticLayout: true
