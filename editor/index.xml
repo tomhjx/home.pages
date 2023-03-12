@@ -82,7 +82,7 @@ body: editor.getModel().getValue()
 });
 })
 &lt;/script></description></item><item><title>Editor: JavaScript</title><link>/editor/javascript/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>/editor/javascript/</guid><description>
-&lt;div id="editorcontainer0" class="border w-100" style="ZgotmplZ" >&lt;/div>
+&lt;div id="editorcontainer0" class="border w-100" style="height: 800px;" >&lt;/div>
 &lt;link rel="stylesheet" data-name="vs/editor/editor.main" href="/lib/monaco-editor/min/vs/editor/editor.main.css" />
 &lt;script>
 var require = { paths: { vs: '/lib/monaco-editor/min/vs' } };
