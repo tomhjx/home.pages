@@ -6,14 +6,6 @@ var require = { paths: { vs: '/lib/monaco-editor/min/vs' } };
 &lt;script src="/lib/monaco-editor/min/vs/loader.js">&lt;/script>
 &lt;script src="/lib/monaco-editor/min/vs/editor/editor.main.nls.js">&lt;/script>
 &lt;script src="/lib/monaco-editor/min/vs/editor/editor.main.js">&lt;/script>
-&lt;div class="input-group p-2 mb-2" role="group">
-&lt;select class="form-select form-select-sm" aria-label="Default select example">
-&lt;option value="1">One&lt;/option>
-&lt;option value="2">Two&lt;/option>
-&lt;option value="3">Three&lt;/option>
-&lt;/select>
-&lt;button class="btn btn-outline-primary btn-sm" id="runBtn" >Run&lt;/button>
-&lt;/div>
 &lt;div class="row p-2">
 &lt;div class="col-auto" >
 &lt;select class="form-select" aria-label="Default select example">
@@ -23,26 +15,7 @@ var require = { paths: { vs: '/lib/monaco-editor/min/vs' } };
 &lt;/select>
 &lt;/div>
 &lt;div class="col-auto" >
-&lt;select class="form-select" aria-label="Default select example">
-&lt;option value="1">One&lt;/option>
-&lt;option value="2">Two&lt;/option>
-&lt;option value="3">Three&lt;/option>
-&lt;/select>
-&lt;/div>
-&lt;div class="col-auto" >
-&lt;ul class="dropdown-menu">
-&lt;li>&lt;a class="dropdown-item" href="#">Action&lt;/a>&lt;/li>
-&lt;li>&lt;a class="dropdown-item" href="#">Another action&lt;/a>&lt;/li>
-&lt;li>&lt;a class="dropdown-item" href="#">Something else here&lt;/a>&lt;/li>
-&lt;li>&lt;hr class="dropdown-divider">&lt;/li>
-&lt;li>&lt;a class="dropdown-item" href="#">Separated link&lt;/a>&lt;/li>
-&lt;/ul>
-&lt;/div>
-&lt;div class="col-auto" >
-&lt;button class="btn btn-outline-primary" id="runBtn" >Run&lt;/button>
-&lt;/div>
-&lt;div class="col-auto" >
-&lt;button class="btn btn-outline-primary" id="runBtn" >Run&lt;/button>
+&lt;button class="btn btn-outline-primary btn-sm" id="runBtn" >Run&lt;/button>
 &lt;/div>
 &lt;/div>
 &lt;div id="input" class="border w-100 p-2" style="height: 500px;" >&lt;/div>
