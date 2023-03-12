@@ -10,7 +10,7 @@ var editor;
 &lt;script src="/lib/monaco-editor/min/vs/editor/editor.main.js">&lt;/script>
 &lt;script>
 $(function(){
-var modeId = 'css';
+var modeId = 'typescript';
 editor = monaco.editor.create(document.getElementById('editor'), {
 language: modeId
 });
@@ -496,7 +496,7 @@ var editor;
 &lt;script src="/lib/monaco-editor/min/vs/editor/editor.main.js">&lt;/script>
 &lt;script>
 $(function(){
-var modeId = 'html';
+var modeId = 'typescript';
 editor = monaco.editor.create(document.getElementById('editor'), {
 language: modeId
 });
@@ -528,7 +528,7 @@ var editor;
 &lt;script src="/lib/monaco-editor/min/vs/editor/editor.main.js">&lt;/script>
 &lt;script>
 $(function(){
-var modeId = 'javascript';
+var modeId = 'typescript';
 editor = monaco.editor.create(document.getElementById('editor'), {
 language: modeId
 });
@@ -561,7 +561,7 @@ var editor;
 &lt;script src="/lib/monaco-editor/min/vs/editor/editor.main.js">&lt;/script>
 &lt;script>
 $(function(){
-var modeId = 'json';
+var modeId = 'typescript';
 editor = monaco.editor.create(document.getElementById('editor'), {
 language: modeId
 });
@@ -636,7 +636,7 @@ var editor;
 &lt;script src="/lib/monaco-editor/min/vs/editor/editor.main.js">&lt;/script>
 &lt;script>
 $(function(){
-var modeId = 'less';
+var modeId = 'typescript';
 editor = monaco.editor.create(document.getElementById('editor'), {
 language: modeId
 });
@@ -668,7 +668,7 @@ var editor;
 &lt;script src="/lib/monaco-editor/min/vs/editor/editor.main.js">&lt;/script>
 &lt;script>
 $(function(){
-var modeId = 'scss';
+var modeId = 'typescript';
 editor = monaco.editor.create(document.getElementById('editor'), {
 language: modeId
 });
