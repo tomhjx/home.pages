@@ -12,7 +12,7 @@
 &lt;button class="btn btn-outline-primary btn-sm" id="runBtn" >Run&lt;/button>
 &lt;/div>
 &lt;/div>
-&lt;div id="editor" class="border w-100 p-2" style="height: 500px;" >&lt;/div>
+&lt;div id="editor" class="border w-100 p-2" style="ZgotmplZ" >&lt;/div>
 &lt;link rel="stylesheet" data-name="vs/editor/editor.main" href="/lib/monaco-editor/min/vs/editor/editor.main.css" />
 &lt;script>
 var require = { paths: { vs: '/lib/monaco-editor/min/vs' } };
