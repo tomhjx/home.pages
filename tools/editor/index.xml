@@ -1,5 +1,5 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Tom's Notebook – Editor</title><link>/tools/editor/</link><description>Recent content in Editor on Tom's Notebook</description><generator>Hugo -- gohugo.io</generator><language>en-us</language><atom:link href="/tools/editor/index.xml" rel="self" type="application/rss+xml"/><item><title>Tools: CSS</title><link>/tools/editor/css/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>/tools/editor/css/</guid><description>
-&lt;div id="editor" class="border w-100" style="ZgotmplZ" >&lt;/div>
+&lt;div id="editor" class="td-box--height-full border w-100" style="" >&lt;/div>
 &lt;link rel="stylesheet" data-name="vs/editor/editor.main" href="/lib/monaco-editor/min/vs/editor/editor.main.css" />
 &lt;script>
 var require = { paths: { vs: '/lib/monaco-editor/min/vs' } };
@@ -31,7 +31,7 @@ oldModel.dispose();
 });
 })
 &lt;/script></description></item><item><title>Tools: HTML</title><link>/tools/editor/html/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>/tools/editor/html/</guid><description>
-&lt;div id="editor" class="border w-100" style="ZgotmplZ" >&lt;/div>
+&lt;div id="editor" class="td-box--height-full border w-100" style="" >&lt;/div>
 &lt;link rel="stylesheet" data-name="vs/editor/editor.main" href="/lib/monaco-editor/min/vs/editor/editor.main.css" />
 &lt;script>
 var require = { paths: { vs: '/lib/monaco-editor/min/vs' } };
@@ -63,7 +63,7 @@ oldModel.dispose();
 });
 })
 &lt;/script></description></item><item><title>Tools: JavaScript</title><link>/tools/editor/javascript/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>/tools/editor/javascript/</guid><description>
-&lt;div id="editor" class="border w-100" style="ZgotmplZ" >&lt;/div>
+&lt;div id="editor" class="td-box--height-full border w-100" style="" >&lt;/div>
 &lt;link rel="stylesheet" data-name="vs/editor/editor.main" href="/lib/monaco-editor/min/vs/editor/editor.main.css" />
 &lt;script>
 var require = { paths: { vs: '/lib/monaco-editor/min/vs' } };
@@ -96,7 +96,7 @@ oldModel.dispose();
 })
 &lt;/script>
 &lt;p>To learn more about &lt;a href="https://www.javascript.com/">JavaScript&lt;/a>&lt;/p></description></item><item><title>Tools: JSON</title><link>/tools/editor/json/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>/tools/editor/json/</guid><description>
-&lt;div id="editor" class="border w-100" style="ZgotmplZ" >&lt;/div>
+&lt;div id="editor" class="td-box--height-full border w-100" style="" >&lt;/div>
 &lt;link rel="stylesheet" data-name="vs/editor/editor.main" href="/lib/monaco-editor/min/vs/editor/editor.main.css" />
 &lt;script>
 var require = { paths: { vs: '/lib/monaco-editor/min/vs' } };
@@ -129,7 +129,7 @@ oldModel.dispose();
 })
 &lt;/script>
 &lt;p>To learn more about &lt;a href="https://www.json.org/json-en.html">JSON&lt;/a>&lt;/p></description></item><item><title>Tools: LESS</title><link>/tools/editor/less/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>/tools/editor/less/</guid><description>
-&lt;div id="editor" class="border w-100" style="ZgotmplZ" >&lt;/div>
+&lt;div id="editor" class="td-box--height-full border w-100" style="" >&lt;/div>
 &lt;link rel="stylesheet" data-name="vs/editor/editor.main" href="/lib/monaco-editor/min/vs/editor/editor.main.css" />
 &lt;script>
 var require = { paths: { vs: '/lib/monaco-editor/min/vs' } };
@@ -161,7 +161,7 @@ oldModel.dispose();
 });
 })
 &lt;/script></description></item><item><title>Tools: SCSS</title><link>/tools/editor/scss/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>/tools/editor/scss/</guid><description>
-&lt;div id="editor" class="border w-100" style="ZgotmplZ" >&lt;/div>
+&lt;div id="editor" class="td-box--height-full border w-100" style="" >&lt;/div>
 &lt;link rel="stylesheet" data-name="vs/editor/editor.main" href="/lib/monaco-editor/min/vs/editor/editor.main.css" />
 &lt;script>
 var require = { paths: { vs: '/lib/monaco-editor/min/vs' } };
@@ -193,7 +193,7 @@ oldModel.dispose();
 });
 })
 &lt;/script></description></item><item><title>Tools: TypeScript</title><link>/tools/editor/typescript/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>/tools/editor/typescript/</guid><description>
-&lt;div id="editor" class="border w-100" style="ZgotmplZ" >&lt;/div>
+&lt;div id="editor" class="td-box--height-full border w-100" style="" >&lt;/div>
 &lt;link rel="stylesheet" data-name="vs/editor/editor.main" href="/lib/monaco-editor/min/vs/editor/editor.main.css" />
 &lt;script>
 var require = { paths: { vs: '/lib/monaco-editor/min/vs' } };
