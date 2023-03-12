@@ -81,7 +81,41 @@ body: editor.getModel().getValue()
 })
 });
 })
-&lt;/script></description></item><item><title>Editor: Markdown Mermaid</title><link>/editor/markdown-mermaid/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>/editor/markdown-mermaid/</guid><description>
+&lt;/script></description></item><item><title>Editor: JavaScript</title><link>/editor/javascript/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>/editor/javascript/</guid><description>
+&lt;div id="editorcontainer0" class="border w-100" style="ZgotmplZ" >&lt;/div>
+&lt;link rel="stylesheet" data-name="vs/editor/editor.main" href="/lib/monaco-editor/min/vs/editor/editor.main.css" />
+&lt;script>
+var require = { paths: { vs: '/lib/monaco-editor/min/vs' } };
+var editor;
+&lt;/script>
+&lt;script src="/lib/monaco-editor/min/vs/loader.js">&lt;/script>
+&lt;script src="/lib/monaco-editor/min/vs/editor/editor.main.nls.js">&lt;/script>
+&lt;script src="/lib/monaco-editor/min/vs/editor/editor.main.js">&lt;/script>
+&lt;script>
+$(function(){
+var modeId = 'typescript';
+editor = monaco.editor.create(document.getElementById('editorcontainer0'), {
+language: modeId,
+automaticLayout: true
+});
+$.ajax({
+type: 'GET',
+url: "/resource/editor/example/"+modeId+".txt",
+dataType: 'text',
+error: function () {
+console.log("load "+modeId+" sample fail.")
+}
+}).done(function (data) {
+var oldModel = editor.getModel();
+var newModel = monaco.editor.createModel(data, modeId);
+editor.setModel(newModel);
+if (oldModel) {
+oldModel.dispose();
+}
+});
+})
+&lt;/script>
+&lt;p>To learn more about &lt;a href="https://www.javascript.com/">JavaScript&lt;/a>&lt;/p></description></item><item><title>Editor: Markdown Mermaid</title><link>/editor/markdown-mermaid/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>/editor/markdown-mermaid/</guid><description>
 &lt;div class="container-fluid">
 &lt;div class="row">
 &lt;div class="col p-2">
