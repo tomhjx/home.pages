@@ -2,7 +2,7 @@
 &lt;p>Page hidden from the section summary list.&lt;/p></description></item><item><title>Examples: Hidden TOC</title><link>/examples/hidden-toc/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>/examples/hidden-toc/</guid><description>
 &lt;p>Page hidden from the TOC menu.&lt;/p></description></item><item><title>Examples: Input</title><link>/examples/input/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>/examples/input/</guid><description/></item><item><title>Examples: Primordial</title><link>/examples/primordial/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>/examples/primordial/</guid><description>
 &lt;div class="mx-auto">
-&lt;a class="btn btn-lg btn-primary mr-3 mb-4" href="/releases/">
+&lt;a class="btn btn-lg btn-primary mr-3 mb-4" href="/tools/">
 Learn More &lt;i class="fas fa-arrow-alt-circle-right ml-2">&lt;/i>
 &lt;/a>
 &lt;a class="btn btn-lg btn-secondary mr-3 mb-4" href="https://github.com/google/docsy-example">
