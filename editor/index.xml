@@ -308,6 +308,7 @@ ctx.drawImage(img, 0, 0);
 return canvas;
 }
 function renderMermaid() {
+console.log(input.val());
 mermaid.render('theGraph', input.val()).then(({ svgCode, bindFunctions }) => {
 output.html(svgCode);
 console.log(svgCode);
