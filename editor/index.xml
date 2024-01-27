@@ -134,7 +134,7 @@ To learn more about &lt;a href="https://mermaid.js.org/" >Mermaid&lt;/a>
 &lt;div id="output" class="col">&lt;/div>
 &lt;/div>
 &lt;/div>
-&lt;script src="https://cdn.jsdelivr.net/npm/mermaid/dist/mermaid.min.js">&lt;/script>
+&lt;script src="https://cdn.jsdelivr.net/npm/mermaid@10.2.0/dist/mermaid.min.js">&lt;/script>
 &lt;script >
 $(function(){
 mermaid.initialize({startOnLoad:false});
