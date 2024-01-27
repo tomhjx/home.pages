@@ -114,6 +114,39 @@ body: editor.getModel().getValue()
 })
 });
 })
+&lt;/script></description></item><item><title>Editor: HTML</title><link>/editor/html/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>/editor/html/</guid><description>
+&lt;div id="editorcontainer0" class="border w-100" style="height: 800px;" >&lt;/div>
+&lt;link rel="stylesheet" data-name="vs/editor/editor.main" href="/lib/monaco-editor/min/vs/editor/editor.main.css" />
+&lt;script>
+var require = { paths: { vs: '/lib/monaco-editor/min/vs' } };
+var editor;
+&lt;/script>
+&lt;script src="/lib/monaco-editor/min/vs/loader.js">&lt;/script>
+&lt;script src="/lib/monaco-editor/min/vs/editor/editor.main.nls.js">&lt;/script>
+&lt;script src="/lib/monaco-editor/min/vs/editor/editor.main.js">&lt;/script>
+&lt;script>
+$(function(){
+var modeId = 'html';
+editor = monaco.editor.create(document.getElementById('editorcontainer0'), {
+language: modeId,
+automaticLayout: true
+});
+$.ajax({
+type: 'GET',
+url: "/resource/editor/example/"+modeId+".txt",
+dataType: 'text',
+error: function () {
+console.log("load "+modeId+" sample fail.")
+}
+}).done(function (data) {
+var oldModel = editor.getModel();
+var newModel = monaco.editor.createModel(data, modeId);
+editor.setModel(newModel);
+if (oldModel) {
+oldModel.dispose();
+}
+});
+})
 &lt;/script></description></item><item><title>Editor: JavaScript</title><link>/editor/javascript/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>/editor/javascript/</guid><description>
 &lt;div id="editorcontainer0" class="border w-100" style="height: 800px;" >&lt;/div>
 &lt;link rel="stylesheet" data-name="vs/editor/editor.main" href="/lib/monaco-editor/min/vs/editor/editor.main.css" />
@@ -148,7 +181,74 @@ oldModel.dispose();
 });
 })
 &lt;/script>
-&lt;p>To learn more about &lt;a href="https://www.javascript.com/">JavaScript&lt;/a>&lt;/p></description></item><item><title>Editor: Markdown Mermaid</title><link>/editor/markdown-mermaid/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>/editor/markdown-mermaid/</guid><description>
+&lt;p>To learn more about &lt;a href="https://www.javascript.com/">JavaScript&lt;/a>&lt;/p></description></item><item><title>Editor: JSON</title><link>/editor/json/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>/editor/json/</guid><description>
+&lt;div id="editorcontainer0" class="border w-100" style="height: 800px;" >&lt;/div>
+&lt;link rel="stylesheet" data-name="vs/editor/editor.main" href="/lib/monaco-editor/min/vs/editor/editor.main.css" />
+&lt;script>
+var require = { paths: { vs: '/lib/monaco-editor/min/vs' } };
+var editor;
+&lt;/script>
+&lt;script src="/lib/monaco-editor/min/vs/loader.js">&lt;/script>
+&lt;script src="/lib/monaco-editor/min/vs/editor/editor.main.nls.js">&lt;/script>
+&lt;script src="/lib/monaco-editor/min/vs/editor/editor.main.js">&lt;/script>
+&lt;script>
+$(function(){
+var modeId = 'json';
+editor = monaco.editor.create(document.getElementById('editorcontainer0'), {
+language: modeId,
+automaticLayout: true
+});
+$.ajax({
+type: 'GET',
+url: "/resource/editor/example/"+modeId+".txt",
+dataType: 'text',
+error: function () {
+console.log("load "+modeId+" sample fail.")
+}
+}).done(function (data) {
+var oldModel = editor.getModel();
+var newModel = monaco.editor.createModel(data, modeId);
+editor.setModel(newModel);
+if (oldModel) {
+oldModel.dispose();
+}
+});
+})
+&lt;/script>
+&lt;p>To learn more about &lt;a href="https://www.json.org/json-en.html">JSON&lt;/a>&lt;/p></description></item><item><title>Editor: LESS</title><link>/editor/less/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>/editor/less/</guid><description>
+&lt;div id="editorcontainer0" class="border w-100" style="height: 800px;" >&lt;/div>
+&lt;link rel="stylesheet" data-name="vs/editor/editor.main" href="/lib/monaco-editor/min/vs/editor/editor.main.css" />
+&lt;script>
+var require = { paths: { vs: '/lib/monaco-editor/min/vs' } };
+var editor;
+&lt;/script>
+&lt;script src="/lib/monaco-editor/min/vs/loader.js">&lt;/script>
+&lt;script src="/lib/monaco-editor/min/vs/editor/editor.main.nls.js">&lt;/script>
+&lt;script src="/lib/monaco-editor/min/vs/editor/editor.main.js">&lt;/script>
+&lt;script>
+$(function(){
+var modeId = 'less';
+editor = monaco.editor.create(document.getElementById('editorcontainer0'), {
+language: modeId,
+automaticLayout: true
+});
+$.ajax({
+type: 'GET',
+url: "/resource/editor/example/"+modeId+".txt",
+dataType: 'text',
+error: function () {
+console.log("load "+modeId+" sample fail.")
+}
+}).done(function (data) {
+var oldModel = editor.getModel();
+var newModel = monaco.editor.createModel(data, modeId);
+editor.setModel(newModel);
+if (oldModel) {
+oldModel.dispose();
+}
+});
+})
+&lt;/script></description></item><item><title>Editor: Markdown Mermaid</title><link>/editor/markdown-mermaid/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>/editor/markdown-mermaid/</guid><description>
 &lt;div class="container-fluid">
 &lt;div class="row">
 &lt;div class="col p-2">
@@ -239,4 +339,71 @@ downloadPNG.attr("download", self.crypto.randomUUID()+'.png')
 input.val('graph TB\na-->b');
 renderMermaid();
 })
-&lt;/script></description></item></channel></rss>
+&lt;/script></description></item><item><title>Editor: SCSS</title><link>/editor/scss/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>/editor/scss/</guid><description>
+&lt;div id="editorcontainer0" class="border w-100" style="height: 800px;" >&lt;/div>
+&lt;link rel="stylesheet" data-name="vs/editor/editor.main" href="/lib/monaco-editor/min/vs/editor/editor.main.css" />
+&lt;script>
+var require = { paths: { vs: '/lib/monaco-editor/min/vs' } };
+var editor;
+&lt;/script>
+&lt;script src="/lib/monaco-editor/min/vs/loader.js">&lt;/script>
+&lt;script src="/lib/monaco-editor/min/vs/editor/editor.main.nls.js">&lt;/script>
+&lt;script src="/lib/monaco-editor/min/vs/editor/editor.main.js">&lt;/script>
+&lt;script>
+$(function(){
+var modeId = 'scss';
+editor = monaco.editor.create(document.getElementById('editorcontainer0'), {
+language: modeId,
+automaticLayout: true
+});
+$.ajax({
+type: 'GET',
+url: "/resource/editor/example/"+modeId+".txt",
+dataType: 'text',
+error: function () {
+console.log("load "+modeId+" sample fail.")
+}
+}).done(function (data) {
+var oldModel = editor.getModel();
+var newModel = monaco.editor.createModel(data, modeId);
+editor.setModel(newModel);
+if (oldModel) {
+oldModel.dispose();
+}
+});
+})
+&lt;/script></description></item><item><title>Editor: TypeScript</title><link>/editor/typescript/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>/editor/typescript/</guid><description>
+&lt;div id="editorcontainer0" class="border w-100" style="height: 800px;" >&lt;/div>
+&lt;link rel="stylesheet" data-name="vs/editor/editor.main" href="/lib/monaco-editor/min/vs/editor/editor.main.css" />
+&lt;script>
+var require = { paths: { vs: '/lib/monaco-editor/min/vs' } };
+var editor;
+&lt;/script>
+&lt;script src="/lib/monaco-editor/min/vs/loader.js">&lt;/script>
+&lt;script src="/lib/monaco-editor/min/vs/editor/editor.main.nls.js">&lt;/script>
+&lt;script src="/lib/monaco-editor/min/vs/editor/editor.main.js">&lt;/script>
+&lt;script>
+$(function(){
+var modeId = 'typescript';
+editor = monaco.editor.create(document.getElementById('editorcontainer0'), {
+language: modeId,
+automaticLayout: true
+});
+$.ajax({
+type: 'GET',
+url: "/resource/editor/example/"+modeId+".txt",
+dataType: 'text',
+error: function () {
+console.log("load "+modeId+" sample fail.")
+}
+}).done(function (data) {
+var oldModel = editor.getModel();
+var newModel = monaco.editor.createModel(data, modeId);
+editor.setModel(newModel);
+if (oldModel) {
+oldModel.dispose();
+}
+});
+})
+&lt;/script>
+&lt;p>To learn more about &lt;a href="http://www.typescriptlang.org/">TypeScript&lt;/a>&lt;/p></description></item></channel></rss>
