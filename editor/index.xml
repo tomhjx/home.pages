@@ -253,24 +253,27 @@ oldModel.dispose();
 &lt;div class="row">
 &lt;div class="col p-2">
 &lt;div class="btn-group" role="group">
-&lt;button class="btn btn-outline-primary btn-sm" id="preview" >Preview&lt;/button>
-&lt;a class="btn btn-outline-primary btn-sm" id="downloadPNG" href="javascript:;" download="a.png" >Download PNG&lt;/a>
-&lt;a class="btn btn-outline-primary btn-sm" id="downloadSVG" href="javascript:;" download="a.svg" >Download SVG&lt;/a>
+&lt;button class="btn btn-outline-primary btn-sm" id="preview">Preview&lt;/button>
+&lt;a class="btn btn-outline-primary btn-sm" id="downloadPNG" href="javascript:;"
+download="a.png">Download PNG&lt;/a>
+&lt;a class="btn btn-outline-primary btn-sm" id="downloadSVG" href="javascript:;"
+download="a.svg">Download SVG&lt;/a>
 &lt;/div>
 &lt;/div>
 &lt;/div>
 &lt;div class="row">
 &lt;div class="col">
-&lt;textarea id="input" class="border w-100" style="height: 500px;" placeholder="please put the code here" >&lt;/textarea>
-To learn more about &lt;a href="https://mermaid.js.org/" >Mermaid&lt;/a>
+&lt;textarea id="input" class="border w-100" style="height: 500px;"
+placeholder="please put the code here">&lt;/textarea>
+To learn more about &lt;a href="https://mermaid.js.org/">Mermaid&lt;/a>
 &lt;/div>
 &lt;div id="output" class="col">&lt;/div>
 &lt;/div>
 &lt;/div>
-&lt;script src="https://cdn.jsdelivr.net/npm/mermaid@10.2.0/dist/mermaid.min.js">&lt;/script>
-&lt;script >
-$(function(){
-mermaid.initialize({startOnLoad:false});
+&lt;script type="module">
+import mermaid from 'https://cdn.jsdelivr.net/npm/mermaid@10/dist/mermaid.esm.min.mjs';
+$(function () {
+mermaid.initialize({ startOnLoad: false });
 var input = $('#input');
 var output = $('#output');
 var linkToView = $('#preview');
@@ -282,27 +285,27 @@ var timeout = null
 var svgDataUrl = ''
 // define
 var img = new Image();
-img.crossOrigin="anonymous";
-img.onload=function(){
-console.log("img.naturalWidth="+img.naturalWidth)
-console.log("img.naturalHeight="+img.naturalHeight)
-console.log("img.width="+img.width)
-console.log("img.height="+img.height)
+img.crossOrigin = "anonymous";
+img.onload = function () {
+console.log("img.naturalWidth=" + img.naturalWidth)
+console.log("img.naturalHeight=" + img.naturalHeight)
+console.log("img.width=" + img.width)
+console.log("img.height=" + img.height)
 }
 function draw() {
 if (!canvas) {
 canvas = document.createElement('canvas');
 }
-var imgH=img.height;
-var imgW=img.width;
+var imgH = img.height;
+var imgW = img.width;
 canvas.width = imgW;
 canvas.height = imgH;
 var ctx = canvas.getContext("2d");
 ctx.drawImage(img, 0, 0);
 return canvas;
 }
-async function renderMermaid() {
-const {svg, bindFunctions} = await mermaid.render('theGraph', input.val(), function(svgCode) {
+function renderMermaid() {
+mermaid.render('theGraph', input.val()).then(({ svgCode, bindFunctions }) => {
 output.html(svgCode);
 svg = output.find('svg')[0];
 var svgData = new XMLSerializer().serializeToString(svg);
@@ -318,22 +321,22 @@ img.height = svg.getBBox().height
 });
 }
 // bind
-input.keydown(function(){
+input.keydown(function () {
 clearTimeout(timeout)
 })
-input.keyup(function(){
+input.keyup(function () {
 timeout = setTimeout(renderMermaid, 500)
 })
-linkToView.click(function(){
+linkToView.click(function () {
 var win = window.open();
 win.document.write('&lt;img src="' + img.src + '" />');
 })
-downloadSVG.click(function(){
+downloadSVG.click(function () {
 downloadPNG.attr("href", svgDataUrl)
 });
-downloadPNG.click(function(){
+downloadPNG.click(function () {
 downloadPNG.attr("href", draw().toDataURL('image/png'))
-downloadPNG.attr("download", self.crypto.randomUUID()+'.png')
+downloadPNG.attr("download", self.crypto.randomUUID() + '.png')
 });
 // init
 input.val('graph TB\na-->b');
