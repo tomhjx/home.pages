@@ -1,5 +1,5 @@
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Tom's Notebook – Format</title><link>/format/</link><description>Recent content in Format on Tom's Notebook</description><generator>Hugo -- gohugo.io</generator><language>en-us</language><atom:link href="/format/index.xml" rel="self" type="application/rss+xml"/><item><title>Format: CURL to GO</title><link>/format/curl2go/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>/format/curl2go/</guid><description>
-Coming soon</description></item><item><title>Format: JSON to Code With Quicktype</title><link>/format/json2code/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>/format/json2code/</guid><description>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Tom's Notebook – Format</title><link>/format/</link><description>Recent content in Format on Tom's Notebook</description><generator>Hugo -- gohugo.io</generator><language>en-us</language><atom:link href="/format/index.xml" rel="self" type="application/rss+xml"/><item><title>Format: CURL command to Code</title><link>/format/curl2code/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>/format/curl2code/</guid><description>
+&lt;p>To learn more about &lt;a href="https://curlconverter.com/">curlconverter.com&lt;/a>&lt;/p></description></item><item><title>Format: JSON to Code</title><link>/format/json2code/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>/format/json2code/</guid><description>
 &lt;p>To learn more about &lt;a href="https://app.quicktype.io/">Quicktype&lt;/a>&lt;/p></description></item><item><title>Format: JSON to GO</title><link>/format/json2go/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>/format/json2go/</guid><description>
 &lt;link rel="stylesheet" href="/css/content/docs/formatter/json2go.css">
 &lt;script src="/js/highlight.min.js">&lt;/script>
@@ -11,7 +11,7 @@ Coming soon</description></item><item><title>Format: JSON to Code With Quicktype
 Convert JSON to Go struct
 &lt;/div>
 &lt;div class="row">
-Go &lt;label>&lt;input type="checkbox" id="inline" checked>Inline type definitions&lt;/label> &lt;span class="copy" id="copy-btn">Copy to clipboard&lt;/span>
+Go &lt;label>&lt;input type="checkbox" id="inline" checked>Inline type definitions&lt;/label>
 &lt;/div>
 &lt;div class="row">
 &lt;div class="col">
