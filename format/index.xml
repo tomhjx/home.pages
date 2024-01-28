@@ -1,5 +1,6 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Tom's Notebook – Format</title><link>/format/</link><description>Recent content in Format on Tom's Notebook</description><generator>Hugo -- gohugo.io</generator><language>en-us</language><atom:link href="/format/index.xml" rel="self" type="application/rss+xml"/><item><title>Format: CURL to GO</title><link>/format/curl2go/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>/format/curl2go/</guid><description>
-Coming soon</description></item><item><title>Format: JSON to GO</title><link>/format/json2go/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>/format/json2go/</guid><description>
+Coming soon</description></item><item><title>Format: JSON to Code With Quicktype</title><link>/format/json2code/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>/format/json2code/</guid><description>
+&lt;p>To learn more about &lt;a href="https://app.quicktype.io/">Quicktype&lt;/a>&lt;/p></description></item><item><title>Format: JSON to GO</title><link>/format/json2go/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>/format/json2go/</guid><description>
 &lt;link rel="stylesheet" href="/css/content/docs/formatter/json2go.css">
 &lt;script src="/js/highlight.min.js">&lt;/script>
 &lt;script src="/js/json-to-go.js">&lt;/script>
@@ -20,5 +21,4 @@ Go &lt;label>&lt;input type="checkbox" id="inline" checked>Inline type definitio
 &lt;div id="output">&lt;/div>
 &lt;/div>
 &lt;/div>
-&lt;/div></description></item><item><title>Format: JSON to GO</title><link>/format/json2go2/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>/format/json2go2/</guid><description>
-&lt;iframe src="https://app.quicktype.io/">&lt;/iframe></description></item></channel></rss>
+&lt;/div></description></item></channel></rss>
