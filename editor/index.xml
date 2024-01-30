@@ -114,7 +114,11 @@ body: editor.getModel().getValue()
 })
 });
 })
-&lt;/script></description></item><item><title>Editor: HTML</title><link>/editor/html/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>/editor/html/</guid><description>
+&lt;/script></description></item><item><title>Editor: Go Playground</title><link>/editor/go-playground/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>/editor/go-playground/</guid><description>
+&lt;iframe width="100%" height="1200" name="iframe" src="https://go.dev/play/" frameborder="0" scrolling="no" >
+&lt;/iframe>
+&lt;br />
+To learn more about &lt;a href="https://go.dev/play/">Go Playground&lt;/a></description></item><item><title>Editor: HTML</title><link>/editor/html/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>/editor/html/</guid><description>
 &lt;div id="editorcontainer0" class="border w-100" style="height: 800px;" >&lt;/div>
 &lt;link rel="stylesheet" data-name="vs/editor/editor.main" href="/lib/monaco-editor/min/vs/editor/editor.main.css" />
 &lt;script>
