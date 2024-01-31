@@ -6,4 +6,8 @@ To learn more about &lt;a href="https://goplay.tools/">Go Playground&lt;/a></des
 &lt;iframe width="100%" height="800" name="iframe" src="https://liveweave.com/" frameborder="0" scrolling="no" >
 &lt;/iframe>
 &lt;br />
-To learn more about &lt;a href="https://liveweave.com/">liveweave&lt;/a></description></item></channel></rss>
+To learn more about &lt;a href="https://liveweave.com/">liveweave&lt;/a></description></item><item><title>Playground: SQL Playground</title><link>/playground/sql/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>/playground/sql/</guid><description>
+&lt;iframe width="100%" height="800" name="iframe" src="https://sqlfiddle.com/" frameborder="0" scrolling="no" >
+&lt;/iframe>
+&lt;br />
+To learn more about &lt;a href="https://sqlfiddle.com/">sqlfiddle&lt;/a></description></item></channel></rss>
