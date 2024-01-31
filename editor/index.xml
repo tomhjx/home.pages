@@ -31,29 +31,6 @@ oldModel.dispose();
 }
 });
 })
-&lt;/script></description></item><item><title>Editor: Diff</title><link>/editor/diff/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>/editor/diff/</guid><description>
-&lt;div id="editorcontainer0" class="border w-100" style="height: 800px;" >&lt;/div>
-&lt;link rel="stylesheet" data-name="vs/editor/editor.main" href="/lib/monaco-editor/min/vs/editor/editor.main.css" />
-&lt;script>
-var require = { paths: { vs: '/lib/monaco-editor/min/vs' } };
-var editor;
-&lt;/script>
-&lt;script src="/lib/monaco-editor/min/vs/loader.js">&lt;/script>
-&lt;script src="/lib/monaco-editor/min/vs/editor/editor.main.nls.js">&lt;/script>
-&lt;script src="/lib/monaco-editor/min/vs/editor/editor.main.js">&lt;/script>
-&lt;script>
-$(function(){
-require(['vs/editor/editor.main'], function () {
-editor = monaco.editor.createDiffEditor(document.getElementById('editorcontainer0'), {
-originalEditable: true,
-readOnly:false
-});
-editor.setModel({
-original: monaco.editor.createModel('a', 'text/plain'),
-modified: monaco.editor.createModel('b', 'text/plain')
-});
-});
-});
 &lt;/script></description></item><item><title>Editor: Go</title><link>/editor/go/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>/editor/go/</guid><description>
 &lt;div class="row p-2">
 &lt;!-- &lt;div class="col-auto" >

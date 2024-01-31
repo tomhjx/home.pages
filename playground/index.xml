@@ -1,4 +1,27 @@
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Tom's Notebook – Playground</title><link>/playground/</link><description>Recent content in Playground on Tom's Notebook</description><generator>Hugo -- gohugo.io</generator><language>en-us</language><atom:link href="/playground/index.xml" rel="self" type="application/rss+xml"/><item><title>Playground: Golang Playground</title><link>/playground/go/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>/playground/go/</guid><description>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Tom's Notebook – Playground</title><link>/playground/</link><description>Recent content in Playground on Tom's Notebook</description><generator>Hugo -- gohugo.io</generator><language>en-us</language><atom:link href="/playground/index.xml" rel="self" type="application/rss+xml"/><item><title>Playground: Diff</title><link>/playground/diff/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>/playground/diff/</guid><description>
+&lt;div id="editorcontainer0" class="border w-100" style="height: 800px;" >&lt;/div>
+&lt;link rel="stylesheet" data-name="vs/editor/editor.main" href="/lib/monaco-editor/min/vs/editor/editor.main.css" />
+&lt;script>
+var require = { paths: { vs: '/lib/monaco-editor/min/vs' } };
+var editor;
+&lt;/script>
+&lt;script src="/lib/monaco-editor/min/vs/loader.js">&lt;/script>
+&lt;script src="/lib/monaco-editor/min/vs/editor/editor.main.nls.js">&lt;/script>
+&lt;script src="/lib/monaco-editor/min/vs/editor/editor.main.js">&lt;/script>
+&lt;script>
+$(function(){
+require(['vs/editor/editor.main'], function () {
+editor = monaco.editor.createDiffEditor(document.getElementById('editorcontainer0'), {
+originalEditable: true,
+readOnly:false
+});
+editor.setModel({
+original: monaco.editor.createModel('a', 'text/plain'),
+modified: monaco.editor.createModel('b', 'text/plain')
+});
+});
+});
+&lt;/script></description></item><item><title>Playground: Golang Playground</title><link>/playground/go/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>/playground/go/</guid><description>
 &lt;iframe width="100%" height="800" name="iframe" src="https://goplay.tools/" frameborder="0" scrolling="no" >
 &lt;/iframe>
 &lt;br />
