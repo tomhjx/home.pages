@@ -21,16 +21,20 @@ modified: monaco.editor.createModel('b', 'text/plain')
 });
 });
 });
-&lt;/script></description></item><item><title>Playground: Golang Playground</title><link>/playground/go/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>/playground/go/</guid><description>
-&lt;iframe allowfullscreen="true" width="100%" height="800" name="iframe" src="https://goplay.tools/" frameborder="0" scrolling="no" >
+&lt;/script></description></item><item><title>Playground: DotUML Playground</title><link>/playground/dotuml/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>/playground/dotuml/</guid><description>
+&lt;iframe allowfullscreen width="100%" height="100%" name="iframe" src="https://dotuml.com/playground.html" frameborder="0" scrolling="no" >
+&lt;/iframe>
+&lt;br />
+To learn more about &lt;a href="https://dotuml.com/playground.html">DotUML Playground&lt;/a></description></item><item><title>Playground: Golang Playground</title><link>/playground/go/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>/playground/go/</guid><description>
+&lt;iframe allowfullscreen width="100%" height="800" name="iframe" src="https://goplay.tools/" frameborder="0" scrolling="no" >
 &lt;/iframe>
 &lt;br />
 To learn more about &lt;a href="https://goplay.tools/">Go Playground&lt;/a></description></item><item><title>Playground: Graphviz Online Editor</title><link>/playground/graphviz/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>/playground/graphviz/</guid><description>
-&lt;iframe allowfullscreen="true" width="100%" height="1200" name="iframe" src="https://edotor.net/" frameborder="0" scrolling="no" >
+&lt;iframe allowfullscreen width="100%" height="1200" name="iframe" src="https://edotor.net/" frameborder="0" scrolling="no" >
 &lt;/iframe>
 &lt;br />
 To learn more about &lt;a href="https://edotor.net/">edotor&lt;/a></description></item><item><title>Playground: JavaScript Playground</title><link>/playground/js/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>/playground/js/</guid><description>
-&lt;iframe allowfullscreen="true" width="100%" height="800" name="iframe" src="https://liveweave.com/" frameborder="0" scrolling="no" >
+&lt;iframe allowfullscreen width="100%" height="800" name="iframe" src="https://liveweave.com/" frameborder="0" scrolling="no" >
 &lt;/iframe>
 &lt;br />
 To learn more about &lt;a href="https://liveweave.com/">liveweave&lt;/a></description></item><item><title>Playground: Laravel Playground</title><link>/playground/php-laravel/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>/playground/php-laravel/</guid><description>
@@ -103,31 +107,31 @@ To learn more about the things you can do, take a look at the &amp;lt;a href=&am
 &lt;/pre>
 &lt;/div>
 &lt;script type="text/javascript" src="https://embed.laravelplayground.com">&lt;/script></description></item><item><title>Playground: Markdown Mermaid Online Editor</title><link>/playground/mermaid/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>/playground/mermaid/</guid><description>
-&lt;iframe allowfullscreen="true" width="100%" height="1200" name="iframe" src="https://mermaid-js.github.io/mermaid-live-editor/edit" frameborder="0" scrolling="no" >
+&lt;iframe allowfullscreen width="100%" height="1200" name="iframe" src="https://mermaid-js.github.io/mermaid-live-editor/edit" frameborder="0" scrolling="no" >
 &lt;/iframe>
 &lt;br />
 To learn more about &lt;a href="https://mermaid-js.github.io/mermaid-live-editor/edit">Mermaid Live Editor&lt;/a></description></item><item><title>Playground: Online IDE</title><link>/playground/online-ide/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>/playground/online-ide/</guid><description>
-&lt;iframe allowfullscreen="true" width="100%" height="1200" name="iframe" src="https://www.online-ide.com/" frameborder="0" scrolling="no" >
+&lt;iframe allowfullscreen width="100%" height="1200" name="iframe" src="https://www.online-ide.com/" frameborder="0" scrolling="no" >
 &lt;/iframe>
 &lt;br />
 To learn more about &lt;a href="https://www.online-ide.com/">Online IDE&lt;/a></description></item><item><title>Playground: PHP Playground</title><link>/playground/php/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>/playground/php/</guid><description>
-&lt;iframe allowfullscreen="true" width="100%" height="1200" name="iframe" src="https://www.phplayground.com/" frameborder="0" scrolling="no" >
+&lt;iframe allowfullscreen width="100%" height="1200" name="iframe" src="https://www.phplayground.com/" frameborder="0" scrolling="no" >
 &lt;/iframe>
 &lt;br />
 To learn more about &lt;a href="https://www.phplayground.com/">phplayground&lt;/a></description></item><item><title>Playground: Python Playground</title><link>/playground/python/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>/playground/python/</guid><description>
-&lt;iframe allowfullscreen="true" width="100%" height="1200" name="iframe" src="https://programiz.pro/ide/python" frameborder="0" scrolling="no" >
+&lt;iframe allowfullscreen width="100%" height="1200" name="iframe" src="https://programiz.pro/ide/python" frameborder="0" scrolling="no" >
 &lt;/iframe>
 &lt;br />
 To learn more about &lt;a href="https://programiz.pro/ide/python">programiz&lt;/a></description></item><item><title>Playground: Rust Playground</title><link>/playground/rust/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>/playground/rust/</guid><description>
-&lt;iframe allowfullscreen="true" width="100%" height="1200" name="iframe" src="https://play.rust-lang.org/?version=stable&amp;amp;mode=debug&amp;amp;edition=2021" frameborder="0" scrolling="no" >
+&lt;iframe allowfullscreen width="100%" height="1200" name="iframe" src="https://play.rust-lang.org/?version=stable&amp;amp;mode=debug&amp;amp;edition=2021" frameborder="0" scrolling="no" >
 &lt;/iframe>
 &lt;br />
 To learn more about &lt;a href="https://play.rust-lang.org/?version=stable&amp;amp;mode=debug&amp;amp;edition=2021">Rust Playground&lt;/a></description></item><item><title>Playground: SQL Playground</title><link>/playground/sql/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>/playground/sql/</guid><description>
-&lt;iframe allowfullscreen="true" width="100%" height="1200" name="iframe" src="https://sqlfiddle.com/" frameborder="0" scrolling="yes" >
+&lt;iframe allowfullscreen width="100%" height="1200" name="iframe" src="https://sqlfiddle.com/" frameborder="0" scrolling="yes" >
 &lt;/iframe>
 &lt;br />
 To learn more about &lt;a href="https://sqlfiddle.com/">SQL Fiddle&lt;/a></description></item><item><title>Playground: Teh PHP Playground</title><link>/playground/teh-php/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>/playground/teh-php/</guid><description>
-&lt;iframe allowfullscreen="true" width="100%" height="1200" name="iframe" src="https://www.tehplayground.com/" frameborder="0" scrolling="no" >
+&lt;iframe allowfullscreen width="100%" height="1200" name="iframe" src="https://www.tehplayground.com/" frameborder="0" scrolling="no" >
 &lt;/iframe>
 &lt;br />
 To learn more about &lt;a href="https://www.tehplayground.com/">Teh Playground&lt;/a></description></item></channel></rss>

@@ -1,9 +1,9 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Tom's Notebook – Transform</title><link>/transform/</link><description>Recent content in Transform on Tom's Notebook</description><generator>Hugo -- gohugo.io</generator><language>en-us</language><atom:link href="/transform/index.xml" rel="self" type="application/rss+xml"/><item><title>Transform: CURL command to Code</title><link>/transform/curl2code/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>/transform/curl2code/</guid><description>
-&lt;iframe allowfullscreen="true" width="100%" height="1200" name="iframe" src="https://curlconverter.com/" frameborder="0" scrolling="yes" >
+&lt;iframe allowfullscreen width="100%" height="1200" name="iframe" src="https://curlconverter.com/" frameborder="0" scrolling="yes" >
 &lt;/iframe>
 &lt;br />
 To learn more about &lt;a href="https://curlconverter.com/">curlconverter&lt;/a></description></item><item><title>Transform: JSON to Code</title><link>/transform/json2code/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>/transform/json2code/</guid><description>
-&lt;iframe allowfullscreen="true" width="1900" height="1200" name="iframe" src="https://app.quicktype.io/" frameborder="0" scrolling="yes" >
+&lt;iframe allowfullscreen width="1900" height="1200" name="iframe" src="https://app.quicktype.io/" frameborder="0" scrolling="yes" >
 &lt;/iframe>
 &lt;br />
 To learn more about &lt;a href="https://app.quicktype.io/">Quicktype&lt;/a></description></item><item><title>Transform: JSON to GO</title><link>/transform/json2go/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>/transform/json2go/</guid><description>
@@ -28,7 +28,7 @@ Go &lt;label>&lt;input type="checkbox" id="inline" checked>Inline type definitio
 &lt;/div>
 &lt;/div>
 &lt;/div></description></item><item><title>Transform: Polyglot Transform</title><link>/transform/polyglot/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>/transform/polyglot/</guid><description>
-&lt;iframe allowfullscreen="true" width="100%" height="1200" name="iframe" src="https://transform.tools" frameborder="0" scrolling="no" >
+&lt;iframe allowfullscreen width="100%" height="1200" name="iframe" src="https://transform.tools" frameborder="0" scrolling="no" >
 &lt;/iframe>
 &lt;br />
 To learn more about &lt;a href="https://transform.tools">transform&lt;/a></description></item></channel></rss>
