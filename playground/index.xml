@@ -106,7 +106,11 @@ To learn more about &lt;a href="https://mermaid-js.github.io/mermaid-live-editor
 &lt;iframe width="100%" height="1200" name="iframe" src="https://www.phplayground.com/" frameborder="0" scrolling="no" >
 &lt;/iframe>
 &lt;br />
-To learn more about &lt;a href="https://www.phplayground.com/">phplayground&lt;/a></description></item><item><title>Playground: SQL Playground</title><link>/playground/sql/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>/playground/sql/</guid><description>
+To learn more about &lt;a href="https://www.phplayground.com/">phplayground&lt;/a></description></item><item><title>Playground: Python Playground</title><link>/playground/python/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>/playground/python/</guid><description>
+&lt;iframe width="100%" height="1200" name="iframe" src="https://programiz.pro/ide/python" frameborder="0" scrolling="no" >
+&lt;/iframe>
+&lt;br />
+To learn more about &lt;a href="https://programiz.pro/ide/python">programiz&lt;/a></description></item><item><title>Playground: SQL Playground</title><link>/playground/sql/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>/playground/sql/</guid><description>
 &lt;iframe width="100%" height="1200" name="iframe" src="https://sqlfiddle.com/" frameborder="0" scrolling="yes" >
 &lt;/iframe>
 &lt;br />
