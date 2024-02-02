@@ -22,7 +22,7 @@ modified: monaco.editor.createModel('b', 'text/plain')
 });
 });
 &lt;/script></description></item><item><title>Playground: DotUML Playground</title><link>/playground/dotuml/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>/playground/dotuml/</guid><description>
-&lt;iframe allowfullscreen width="100%" height="100%" name="iframe" src="https://dotuml.com/playground.html" frameborder="0" scrolling="no" >
+&lt;iframe allowfullscreen width="100%" height="1200" name="iframe" src="https://dotuml.com/playground.html" frameborder="0" scrolling="no" >
 &lt;/iframe>
 &lt;br />
 To learn more about &lt;a href="https://dotuml.com/playground.html">DotUML Playground&lt;/a></description></item><item><title>Playground: Golang Playground</title><link>/playground/go/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>/playground/go/</guid><description>
