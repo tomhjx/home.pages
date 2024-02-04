@@ -1,8 +1,8 @@
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Tom's Notebook – Playground</title><link>/playground/</link><description>Recent content in Playground on Tom's Notebook</description><generator>Hugo -- gohugo.io</generator><language>en-us</language><atom:link href="/playground/index.xml" rel="self" type="application/rss+xml"/><item><title>Playground: Alpine Linux 3.12.0 x86 Playground</title><link>/playground/alpine-linux-3-12-0/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>/playground/alpine-linux-3-12-0/</guid><description>
-&lt;iframe allowfullscreen width="100%" height="800" name="iframe" src="https://bellard.org/jslinux/vm.html?url=alpine-x86.cfg&amp;amp;mem=192" frameborder="0" scrolling="no" >
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Tom's Notebook – Playground</title><link>/playground/</link><description>Recent content in Playground on Tom's Notebook</description><generator>Hugo -- gohugo.io</generator><language>en-us</language><atom:link href="/playground/index.xml" rel="self" type="application/rss+xml"/><item><title>Playground: Alpine Linux 3.12.0 x86 Operating System Playground</title><link>/playground/alpine-linux-3-12-0/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>/playground/alpine-linux-3-12-0/</guid><description>
+&lt;iframe allowfullscreen width="100%" height="800" name="iframe" src="https://bellard.org/jslinux/vm.html?url=alpine-x86.cfg&amp;amp;mem=192&amp;amp;w=1024&amp;amp;h=768" frameborder="0" scrolling="no" >
 &lt;/iframe>
 &lt;br />
-To learn more about &lt;a href="https://bellard.org/jslinux/vm.html?url=alpine-x86.cfg&amp;amp;mem=192">JS/Linux&lt;/a></description></item><item><title>Playground: Diff</title><link>/playground/diff/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>/playground/diff/</guid><description>
+To learn more about &lt;a href="https://bellard.org/jslinux/vm.html?url=alpine-x86.cfg&amp;amp;mem=192&amp;amp;w=1024&amp;amp;h=768">JS/Linux&lt;/a></description></item><item><title>Playground: Diff</title><link>/playground/diff/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>/playground/diff/</guid><description>
 &lt;div id="editorcontainer0" class="border w-100" style="height: 800px;" >&lt;/div>
 &lt;link rel="stylesheet" data-name="vs/editor/editor.main" href="/lib/monaco-editor/min/vs/editor/editor.main.css" />
 &lt;script>
@@ -138,4 +138,8 @@ To learn more about &lt;a href="https://sqlfiddle.com/">SQL Fiddle&lt;/a></descr
 &lt;iframe allowfullscreen width="100%" height="1200" name="iframe" src="https://www.tehplayground.com/" frameborder="0" scrolling="no" >
 &lt;/iframe>
 &lt;br />
-To learn more about &lt;a href="https://www.tehplayground.com/">Teh Playground&lt;/a></description></item></channel></rss>
+To learn more about &lt;a href="https://www.tehplayground.com/">Teh Playground&lt;/a></description></item><item><title>Playground: Windows 2000 x86 Operating System Playground</title><link>/playground/windows-2000/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>/playground/windows-2000/</guid><description>
+&lt;iframe allowfullscreen width="100%" height="800" name="iframe" src="https://bellard.org/jslinux/vm.html?url=win2k.cfg&amp;amp;mem=192&amp;amp;graphic=1&amp;amp;w=1024&amp;amp;h=768" frameborder="0" scrolling="no" >
+&lt;/iframe>
+&lt;br />
+To learn more about &lt;a href="https://bellard.org/jslinux/vm.html?url=win2k.cfg&amp;amp;mem=192&amp;amp;graphic=1&amp;amp;w=1024&amp;amp;h=768">JS/Linux&lt;/a></description></item></channel></rss>
