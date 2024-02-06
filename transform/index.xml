@@ -35,10 +35,10 @@ To learn more about &lt;a href="https://transform.tools">transform&lt;/a></descr
 &lt;div class="container-fluid">
 &lt;div class="row">
 &lt;div class="col p-2">
-&lt;button class="btn btn-primary" id="encodestr">Encode string&lt;/button>
-&lt;button class="btn btn-primary" id="decodestr">Decode string&lt;/button>
-&lt;button class="btn btn-primary" id="encodeurl">Encode url&lt;/button>
-&lt;button class="btn btn-primary" id="decodeurl">Decode url&lt;/button>
+&lt;button class="btn btn-outline-primary btn-sm" id="encodestr">Encode string&lt;/button>
+&lt;button class="btn btn-outline-primary btn-sm" id="decodestr">Decode string&lt;/button>
+&lt;button class="btn btn-outline-primary btn-sm" id="encodeurl">Encode url&lt;/button>
+&lt;button class="btn btn-outline-primary btn-sm" id="decodeurl">Decode url&lt;/button>
 &lt;/div>
 &lt;/div>
 &lt;div class="row">
