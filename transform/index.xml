@@ -36,6 +36,8 @@ To learn more about &lt;a href="https://transform.tools">transform&lt;/a></descr
 &lt;div class="row">
 &lt;div class="col p-2">
 &lt;div class="btn-group" role="group">
+&lt;button class="btn btn-outline-primary btn-sm" id="encodestr">Encode string&lt;/button>
+&lt;button class="btn btn-outline-primary btn-sm" id="decodestr">Decode string&lt;/button>
 &lt;button class="btn btn-outline-primary btn-sm" id="encodeurl">Encode url&lt;/button>
 &lt;button class="btn btn-outline-primary btn-sm" id="decodeurl">Decode url&lt;/button>
 &lt;/div>
@@ -49,4 +51,20 @@ To learn more about &lt;a href="https://transform.tools">transform&lt;/a></descr
 &lt;textarea id="output" class="border w-100" style="height: 500px;" disabled placeholder="Your results will appear here.">&lt;/textarea>
 &lt;/div>
 &lt;/div>
-&lt;/div></description></item></channel></rss>
+&lt;/div>
+&lt;script>
+$(function(){
+$('#encodestr').click(function(){
+$('#output').val(encodeURIComponent($('#input').val()));
+});
+$('#decodestr').click(function(){
+$('#output').val(decodeURIComponent($('#input').val()));
+});
+$('#encodeurl').click(function(){
+$('#output').val(encodeURI($('#input').val()));
+});
+$('#decodeurl').click(function(){
+$('#output').val(decodeURI($('#input').val()));
+});
+});
+&lt;/script></description></item></channel></rss>
