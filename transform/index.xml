@@ -4,15 +4,11 @@
 &lt;br />
 To learn more about &lt;a href="https://curlconverter.com/">curlconverter&lt;/a></description></item><item><title>Transform: Image to Base64</title><link>/transform/img2base64/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>/transform/img2base64/</guid><description>
 &lt;div class="container-fluid">
-&lt;div class="row">
-&lt;div class="col p-2">
+&lt;div class="row mb-3">
 &lt;input class="form-control" type="file" id="input" accept="image/*" />
 &lt;/div>
-&lt;/div>
-&lt;div class="row">
-&lt;div class="col-md-6">
+&lt;div class="row mb-3">
 &lt;textarea id="output" class="form-control" style="height: 300px;" disabled placeholder="Your results will appear here.">&lt;/textarea>
-&lt;/div>
 &lt;/div>
 &lt;/div>
 &lt;script>
@@ -22,8 +18,7 @@ var input = this;
 if (input.files &amp;&amp; input.files[0]) {
 var reader = new FileReader();
 reader.onload = function(e) {
-var base64Image = e.target.result;
-$("#output").val(base64Image);
+$("#output").val(e.target.result);
 };
 reader.readAsDataURL(input.files[0]);
 }
