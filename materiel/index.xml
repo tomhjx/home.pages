@@ -31,7 +31,7 @@
 &lt;textarea class="form-control" aria-label="With textarea">&lt;/textarea>
 &lt;/div> -->
 &lt;div class="container-fluid">
-&lt;div class="input-group mb-3 row">
+&lt;div class="input-group mb-3">
 &lt;span class="input-group-text" for="colorInput" >Color&lt;/span>
 &lt;input type="color" class="form-control form-control-color" id="colorInput" value="#563d7c" title="Choose your color">
 &lt;/div>
