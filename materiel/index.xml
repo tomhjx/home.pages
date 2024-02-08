@@ -3,12 +3,12 @@
 &lt;div class="mb-3 row">
 &lt;div class="col-sm input-group">
 &lt;span class="input-group-text">Width&lt;/span>
-&lt;input type="text" class="form-control" id="wInput" value="300" >
+&lt;input type="number" class="form-control" id="wInput" value="300" >
 &lt;span class="input-group-text">px&lt;/span>
 &lt;/div>
 &lt;div class="col-sm input-group">
 &lt;span class="input-group-text">High&lt;/span>
-&lt;input type="text" class="form-control" id="hInput" value="200" >
+&lt;input type="number" class="form-control" id="hInput" value="200" >
 &lt;span class="input-group-text">px&lt;/span>
 &lt;/div>
 &lt;div class="col-sm input-group">
