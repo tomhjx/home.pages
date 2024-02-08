@@ -118,7 +118,11 @@ To learn more about the things you can do, take a look at the &amp;lt;a href=&am
 &lt;iframe allowfullscreen width="100%" height="1200" name="iframe" src="https://mermaid-js.github.io/mermaid-live-editor/edit" frameborder="0" scrolling="no" >
 &lt;/iframe>
 &lt;br />
-To learn more about &lt;a href="https://mermaid-js.github.io/mermaid-live-editor/edit">Mermaid Live Editor&lt;/a></description></item><item><title>Playground: Online IDE</title><link>/playground/online-ide/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>/playground/online-ide/</guid><description>
+To learn more about &lt;a href="https://mermaid-js.github.io/mermaid-live-editor/edit">Mermaid Live Editor&lt;/a></description></item><item><title>Playground: Mongo Playground</title><link>/playground/mongo/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>/playground/mongo/</guid><description>
+&lt;iframe allowfullscreen width="100%" height="1200" name="iframe" src="https://mongoplayground.net/" frameborder="0" scrolling="no" >
+&lt;/iframe>
+&lt;br />
+To learn more about &lt;a href="https://mongoplayground.net/">mongoplayground&lt;/a></description></item><item><title>Playground: Online IDE</title><link>/playground/online-ide/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>/playground/online-ide/</guid><description>
 &lt;iframe allowfullscreen width="100%" height="1200" name="iframe" src="https://www.online-ide.com/" frameborder="0" scrolling="no" >
 &lt;/iframe>
 &lt;br />
