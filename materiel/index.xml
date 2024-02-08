@@ -48,18 +48,8 @@ const canvas = document.getElementById("placeholder");
 if (canvas.getContext) {
 const ctx = canvas.getContext("2d");
 ctx.clearRect(0, 0, canvas.width, canvas.height);
-const thumbnailWidth = 800;
-const thumbnailHeight = 600;
-const aspectRatio = width / height;
-if (aspectRatio > 1) {
-// 图片宽度大于高度
-width = thumbnailWidth;
-height = thumbnailHeight / aspectRatio;
-} else {
-// 图片高度大于等于宽度
-width = thumbnailWidth * aspectRatio;
-height = thumbnailHeight;
-}
+canvas.width = width
+canvas.height = height
 // 设置背景颜色
 ctx.fillStyle = bgColor;
 ctx.fillRect(0, 0, width, height);
