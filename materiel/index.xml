@@ -32,7 +32,7 @@
 &lt;/div>
 &lt;/div>
 &lt;div class="mb-3 row">
-&lt;canvas id="placeholder" >&lt;/canvas>
+&lt;img id="preview" class="img-fluid" />
 &lt;/div>
 &lt;/div>
 &lt;script>
@@ -40,11 +40,12 @@ $(function(){
 var wInput = $('#wInput');
 var hInput = $('#hInput');
 var textInput = $('#textInput');
-var placeholder = $('#placeholder');
+var placeholder = $('&lt;canvas>')
 var bgColorInput = $('#bgColorInput');
 var txtColorInput = $('#txtColorInput');
+var preview = $('#preview');
 function createPlaceholder(width, height, bgColor, textColor, text) {
-const canvas = document.getElementById("placeholder");
+const canvas = placeholder.get(0);
 if (canvas.getContext) {
 const ctx = canvas.getContext("2d");
 ctx.clearRect(0, 0, canvas.width, canvas.height);
@@ -60,6 +61,7 @@ ctx.textBaseline = "middle";
 ctx.fillStyle = textColor;
 // 绘制文本
 ctx.fillText(text, width / 2, height / 2);
+preview.attr('src', canvas.toDataURL("image/png"));
 }
 }
 function reset() {
