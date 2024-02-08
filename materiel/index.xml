@@ -29,9 +29,21 @@
 &lt;div class="input-group">
 &lt;span class="input-group-text">With textarea&lt;/span>
 &lt;textarea class="form-control" aria-label="With textarea">&lt;/textarea>
-&lt;/div> -->
+&lt;/div>
+&lt;div class="row g-3">
+&lt;div class="col-sm-7">
+&lt;input type="text" class="form-control" placeholder="City" aria-label="City">
+&lt;/div>
+&lt;div class="col-sm">
+&lt;input type="text" class="form-control" placeholder="State" aria-label="State">
+&lt;/div>
+&lt;div class="col-sm">
+&lt;input type="text" class="form-control" placeholder="Zip" aria-label="Zip">
+&lt;/div>
+&lt;/div>
+-->
 &lt;div class="container-fluid">
-&lt;div class="input-group mb-3">
+&lt;!-- &lt;div class="input-group mb-3">
 &lt;span class="input-group-text">Width&lt;/span>
 &lt;input type="text" class="form-control" >
 &lt;span class="input-group-text">px&lt;/span>
@@ -40,6 +52,20 @@
 &lt;span class="input-group-text">px&lt;/span>
 &lt;span class="input-group-text">Color&lt;/span>
 &lt;input type="color" class="form-control form-control-color" id="colorInput" value="#563d7c" title="Choose your color">
+&lt;/div> -->
+&lt;div class="mb-3 row">
+&lt;div class="col-sm">
+&lt;div class="input-group mb-3">
+&lt;span class="input-group-text">Width&lt;/span>
+&lt;input type="text" class="form-control" >
+&lt;span class="input-group-text">px&lt;/span>
+&lt;/div>
+&lt;div class="input-group mb-3">
+&lt;span class="input-group-text">High&lt;/span>
+&lt;input type="text" class="form-control" >
+&lt;span class="input-group-text">px&lt;/span>
+&lt;/div>
+&lt;/div>
 &lt;/div>
 &lt;div class="mb-3 row">
 &lt;canvas id="placeholder" width="300" height="200">&lt;/canvas>
