@@ -1,14 +1,12 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Tom's Notebook – Materiel</title><link>/materiel/</link><description>Recent content in Materiel on Tom's Notebook</description><generator>Hugo -- gohugo.io</generator><language>en-us</language><atom:link href="/materiel/index.xml" rel="self" type="application/rss+xml"/><item><title>Materiel: Image Placeholder</title><link>/materiel/image-placeholder/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>/materiel/image-placeholder/</guid><description>
 &lt;div class="container-fluid">
-&lt;!-- &lt;div class="row">
-&lt;div class="col p-2">
-&lt;button class="btn btn-outline-primary btn-sm" id="encodestr">Encode a string&lt;/button>
-&lt;button class="btn btn-outline-primary btn-sm" id="decodestr">Decode a string&lt;/button>
-&lt;button class="btn btn-outline-primary btn-sm" id="encodeurl">Encode a full URI&lt;/button>
-&lt;button class="btn btn-outline-primary btn-sm" id="decodeurl">Decode a full URI&lt;/button>
+&lt;div class="mb-3 row">
+&lt;label for="colorInput" class="col-form-label">Color&lt;/label>
+&lt;div class="col-sm-10">
+&lt;input type="color" class="form-control form-control-color" id="colorInput" value="#563d7c" title="Choose your color">
 &lt;/div>
-&lt;/div> -->
-&lt;div class="row">
+&lt;/div>
+&lt;div class="mb-3 row">
 &lt;canvas id="placeholder" width="300" height="200">&lt;/canvas>
 &lt;/div>
 &lt;/div>
