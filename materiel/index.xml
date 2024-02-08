@@ -32,7 +32,7 @@
 &lt;/div>
 &lt;/div>
 &lt;div class="mb-3 row">
-&lt;canvas id="placeholder" width="300" height="200">&lt;/canvas>
+&lt;canvas id="placeholder" >&lt;/canvas>
 &lt;/div>
 &lt;/div>
 &lt;script>
@@ -43,7 +43,6 @@ var textInput = $('#textInput');
 var placeholder = $('#placeholder');
 var bgColorInput = $('#bgColorInput');
 var txtColorInput = $('#txtColorInput');
-textInput.val(wInput.val()+'x'+hInput.val());
 function createPlaceholder(width, height, bgColor, textColor, text) {
 const canvas = document.getElementById("placeholder");
 if (canvas.getContext) {
@@ -61,9 +60,13 @@ ctx.fillText(text, width / 2, height / 2);
 }
 }
 function reset() {
+var txt = textInput.val()
+if (txt.length == 0) {
+txt = wInput.val()+'x'+hInput.val();
+}
 placeholder.width(wInput.val());
-placeholder.width(hInput.val());
-createPlaceholder(wInput.val(), hInput.val(), bgColorInput.val(), txtColorInput.val(), textInput.val());
+placeholder.height(hInput.val());
+createPlaceholder(wInput.val(), hInput.val(), bgColorInput.val(), txtColorInput.val(), txt);
 }
 $('#generate').click(reset);
 reset();
