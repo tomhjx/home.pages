@@ -2,9 +2,7 @@
 &lt;div class="container-fluid">
 &lt;div class="mb-3 row">
 &lt;label for="colorInput" class="col-form-label">Color&lt;/label>
-&lt;div class="col-sm-10">
 &lt;input type="color" class="form-control form-control-color" id="colorInput" value="#563d7c" title="Choose your color">
-&lt;/div>
 &lt;/div>
 &lt;div class="mb-3 row">
 &lt;canvas id="placeholder" width="300" height="200">&lt;/canvas>
