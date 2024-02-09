@@ -1,10 +1,9 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Tom's Notebook – Materiel</title><link>/materiel/</link><description>Recent content in Materiel on Tom's Notebook</description><generator>Hugo -- gohugo.io</generator><language>en-us</language><atom:link href="/materiel/index.xml" rel="self" type="application/rss+xml"/><item><title>Materiel: Image Placeholder</title><link>/materiel/image-placeholder/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>/materiel/image-placeholder/</guid><description>
 &lt;div class="container-fluid">
 &lt;div class="mb-3 row">
-&lt;div class="col-sm input-group">
-&lt;span class="input-group-text">Width&lt;/span>
+&lt;div class="form-floating col-sm">
 &lt;input type="number" class="form-control" id="wInput" value="300" >
-&lt;span class="input-group-text">px&lt;/span>
+&lt;label for="wInput">Width(px)&lt;/label>
 &lt;/div>
 &lt;div class="col-sm input-group">
 &lt;span class="input-group-text">High&lt;/span>

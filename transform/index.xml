@@ -30,7 +30,35 @@ $('#output').val(decodeURIComponent(escape(atob(str))));
 &lt;iframe allowfullscreen width="100%" height="1200" name="iframe" src="https://curlconverter.com/" frameborder="0" scrolling="yes" >
 &lt;/iframe>
 &lt;br />
-To learn more about &lt;a href="https://curlconverter.com/">curlconverter&lt;/a></description></item><item><title>Transform: Image to Base64</title><link>/transform/img2base64/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>/transform/img2base64/</guid><description>
+To learn more about &lt;a href="https://curlconverter.com/">curlconverter&lt;/a></description></item><item><title>Transform: Date</title><link>/transform/date/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>/transform/date/</guid><description>
+&lt;div class="container-fluid">
+&lt;div class="mb-3 row">
+&lt;div class="col p-2">
+&lt;/div>
+&lt;/div>
+&lt;div class="mb-3 row">
+&lt;div class="col-sm input-group">
+&lt;input type="text" class="form-control" id="unixTime" >
+&lt;select class="form-select form-select-sm" id="unixTimeUnit">
+&lt;option>s&lt;/option>
+&lt;option>ms&lt;/option>
+&lt;/select>
+&lt;/div>
+&lt;div class="col-sm input-group">
+&lt;select class="form-select form-select-sm" aria-label="Time Zone">&lt;/select>
+&lt;input type="text" class="form-control" id="dateTime" placeholder="YYYY-MM-DD HH:mm:ss, e.g. 2024-02-09 07:43:26" >
+&lt;/div>
+&lt;/div>
+&lt;div class="mb-3 row">
+&lt;div class="col p-2">
+&lt;button class="btn btn-outline-primary btn-sm" id="unix2date">Unix Time to Date Time&lt;/button>
+&lt;/div>
+&lt;/div>
+&lt;/div>
+&lt;script>
+$(function(){
+});
+&lt;/script></description></item><item><title>Transform: Image to Base64</title><link>/transform/img2base64/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>/transform/img2base64/</guid><description>
 &lt;div class="container-fluid">
 &lt;div class="row mb-3">
 &lt;input class="form-control" type="file" id="input" accept="image/*" />
