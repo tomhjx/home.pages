@@ -34,15 +34,15 @@ To learn more about &lt;a href="https://curlconverter.com/">curlconverter&lt;/a>
 &lt;div class="container-fluid">
 &lt;div class="mb-3 row">
 &lt;div class="col">Now:
-&lt;span class="col" id="nowUnixTime">&lt;/span>s
+&lt;span class="col" id="nowTimestamp">&lt;/span>s
 &lt;/div>
 &lt;/div>
 &lt;div class="mb-3 row">
 &lt;div class="col">
-&lt;input type="text" class="form-control" id="unixTime" >
+&lt;input type="text" class="form-control" id="timestamp" >
 &lt;/div>
 &lt;div class="col">
-&lt;select class="form-control form-select form-select-sm" id="unixTimeUnit">
+&lt;select class="form-control form-select form-select-sm" id="timestampUnit">
 &lt;option value="s" >s&lt;/option>
 &lt;option value="ms" >ms&lt;/option>
 &lt;/select>
@@ -56,7 +56,8 @@ To learn more about &lt;a href="https://curlconverter.com/">curlconverter&lt;/a>
 &lt;/div>
 &lt;div class="mb-3 row">
 &lt;div class="col p-2">
-&lt;button class="btn btn-outline-primary btn-sm" id="unix2date">Unix Time to Date Time&lt;/button>
+&lt;button class="btn btn-outline-primary btn-sm" id="timestamp2date">Unix Time to Date Time&lt;/button>
+&lt;button class="btn btn-outline-primary btn-sm" id="date2timestamp">Date Time to Unix Time&lt;/button>
 &lt;/div>
 &lt;/div>
 &lt;/div>
@@ -70,19 +71,32 @@ timeZoneSel.append('&lt;option value="'+v+'">'+v+'&lt;/option>');
 });
 timeZoneSel.val(moment.tz.guess());
 setInterval(function(){
-$('#nowUnixTime').text(Date.parse(new Date())/1000);
+$('#nowTimestamp').text(Date.parse(new Date())/1000);
 }, 1000);
-$('#unix2date').click(function(){
-unixTime = $('#unixTimeUnit').val()
-switch (unixTime) {
+$('#timestamp2date').click(function(){
+timestamp = $('#timestamp').val()
+timestampUnit = $('#timestampUnit').val()
+switch (timestampUnit) {
 case 's':
-unixTime = unixTime*1000;
+timestamp = timestamp*1000;
 break;
 default:
 break;
 }
-var t = moment.tz(unixTime, timeZoneSel.val()).format('YYYY-MM-DD HH:mm:ss');
+var t = moment.tz(timestamp, timeZoneSel.val()).format('YYYY-MM-DD HH:mm:ss');
 $('#dateTime').val(t);
+});
+$('#date2timestamp').click(function(){
+var t = moment.tz($('#dateTime').val(), 'YYYY-MM-DD HH:mm:ss', timeZoneSel.val()).valueOf();
+timestampUnit = $('#timestampUnit').val()
+switch (unixTime) {
+case 's':
+t = t/1000;
+break;
+default:
+break;
+}
+$('#timestamp').val(t);
 });
 });
 &lt;/script></description></item><item><title>Transform: Image to Base64</title><link>/transform/img2base64/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>/transform/img2base64/</guid><description>
