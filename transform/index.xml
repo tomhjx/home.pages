@@ -58,8 +58,8 @@ To learn more about &lt;a href="https://curlconverter.com/">curlconverter&lt;/a>
 &lt;/div>
 &lt;div class="mb-3 row">
 &lt;div class="col p-2">
-&lt;button class="btn btn-outline-primary btn-sm" id="timestamp2date">Unix Time to Date Time&lt;/button>
-&lt;button class="btn btn-outline-primary btn-sm" id="date2timestamp">Date Time to Unix Time&lt;/button>
+&lt;button class="btn btn-outline-primary btn-sm" id="timestamp2date">Timestamp to Date Time&lt;/button>
+&lt;button class="btn btn-outline-primary btn-sm" id="date2timestamp">Date Time to Timestamp&lt;/button>
 &lt;/div>
 &lt;/div>
 &lt;/div>
