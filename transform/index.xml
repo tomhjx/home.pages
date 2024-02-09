@@ -81,6 +81,8 @@ break;
 default:
 break;
 }
+var t = moment().tz(timeZoneSel.val()).format('YYYY-MM-DD HH:mm:ss');
+$('#dateTime').val(t);
 });
 });
 &lt;/script></description></item><item><title>Transform: Image to Base64</title><link>/transform/img2base64/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>/transform/img2base64/</guid><description>
