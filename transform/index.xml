@@ -60,10 +60,11 @@ To learn more about &lt;a href="https://curlconverter.com/">curlconverter&lt;/a>
 &lt;script src="https://momentjs.com/downloads/moment-timezone-with-data-10-year-range.js">&lt;/script>
 &lt;script>
 $(function(){
-console.log(moment.tz.guess());
+var timeZoneSel = $('#timeZone');
 $.each(moment.tz.names(), function(k, v){
-$('#timeZone').append('&lt;option value="'+v+'">'+v+'&lt;/option>');
+timeZoneSel.append('&lt;option value="'+v+'">'+v+'&lt;/option>');
 });
+timeZoneSel.val(moment.tz.guess());
 setInterval(function(){
 $('#nowUnixTime').text(Date.parse(new Date()));
 }, 1000);
