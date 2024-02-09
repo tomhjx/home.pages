@@ -83,6 +83,7 @@ break;
 default:
 break;
 }
+console.log(timestamp)
 var t = moment.tz(timestamp, timeZoneSel.val()).format('YYYY-MM-DD HH:mm:ss');
 $('#dateTime').val(t);
 });
