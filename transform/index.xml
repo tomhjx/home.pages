@@ -89,7 +89,7 @@ $('#dateTime').val(t);
 $('#date2timestamp').click(function(){
 var t = moment.tz($('#dateTime').val(), 'YYYY-MM-DD HH:mm:ss', timeZoneSel.val()).valueOf();
 timestampUnit = $('#timestampUnit').val()
-switch (unixTime) {
+switch (timestampUnit) {
 case 's':
 t = t/1000;
 break;
