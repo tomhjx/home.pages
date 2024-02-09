@@ -38,7 +38,7 @@ To learn more about &lt;a href="https://curlconverter.com/">curlconverter&lt;/a>
 &lt;/div>
 &lt;/div>
 &lt;div class="mb-3 row">
-&lt;div class="col input-group mb-3">
+&lt;div class="col input-group">
 &lt;span class="input-group-text">Timestamp&lt;/span>
 &lt;input type="text" class="form-control" id="timestamp" >
 &lt;select class="form-control form-select form-select-sm" id="timestampUnit">
@@ -46,11 +46,11 @@ To learn more about &lt;a href="https://curlconverter.com/">curlconverter&lt;/a>
 &lt;option value="ms" >ms&lt;/option>
 &lt;/select>
 &lt;/div>
-&lt;div class="col input-group mb-3">
+&lt;div class="col input-group">
 &lt;span class="input-group-text">Date Time&lt;/span>
-&lt;select class="form-control form-select form-select-sm mb-3" aria-label="Time Zone" id="timeZone">&lt;/select>
-&lt;select class="form-control form-select form-select-sm mb-3" aria-label="Format" id="dateFormat">&lt;/select>
 &lt;input type="text" class="form-control" id="dateTime" >
+&lt;select class="form-control form-select form-select-sm" aria-label="Time Zone" id="timeZone">&lt;/select>
+&lt;select class="form-control form-select form-select-sm" aria-label="Format" id="dateFormat">&lt;/select>
 &lt;/div>
 &lt;/div>
 &lt;div class="mb-3 row">
