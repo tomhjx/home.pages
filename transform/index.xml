@@ -46,10 +46,10 @@ To learn more about &lt;a href="https://curlconverter.com/">curlconverter&lt;/a>
 &lt;option value="ms" >ms&lt;/option>
 &lt;/select>
 &lt;/div>
-&lt;div class="col">
+&lt;div class="col input-group mb-3">
+&lt;span class="input-group-text">Date Time&lt;/span>
+&lt;select class="form-control form-select form-select-sm mb-3" aria-label="Format" id="dateFormat">&lt;/select>
 &lt;select class="form-control form-select form-select-sm mb-3" aria-label="Time Zone" id="timeZone">&lt;/select>
-&lt;/div>
-&lt;div class="col">
 &lt;input type="text" class="form-control" id="dateTime" placeholder="YYYY-MM-DD HH:mm:ss, e.g. 2024-02-09 07:43:26" >
 &lt;/div>
 &lt;/div>
@@ -69,6 +69,11 @@ $.each(moment.tz.names(), function(k, v){
 timeZoneSel.append('&lt;option value="'+v+'">'+v+'&lt;/option>');
 });
 timeZoneSel.val(moment.tz.guess());
+var dateFormat = $('#dateFormat');
+dateFormats = ['YYYY-MM-DD HH:mm:ss', 'DD.MM.YYYY HH:mm', moment.defaultFormat]
+$.each(dateFormats, function(k, v){
+dateFormat.append('&lt;option value="'+v+'">'+v+'&lt;/option>');
+});
 setInterval(function(){
 $('#nowTimestamp').text(Date.parse(new Date())/1000);
 }, 1000);
