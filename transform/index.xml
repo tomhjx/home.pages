@@ -64,6 +64,7 @@ To learn more about &lt;a href="https://curlconverter.com/">curlconverter&lt;/a>
 &lt;script src="https://momentjs.com/downloads/moment-timezone-with-data-10-year-range.js">&lt;/script>
 &lt;script>
 $(function(){
+const momentTz = require('moment-timezone');
 var timeZoneSel = $('#timeZone');
 $.each(moment.tz.names(), function(k, v){
 timeZoneSel.append('&lt;option value="'+v+'">'+v+'&lt;/option>');
@@ -81,7 +82,7 @@ break;
 default:
 break;
 }
-var t = moment().tz(timeZoneSel.val()).format('YYYY-MM-DD HH:mm:ss');
+var t = momentTz.tz(unixTime, timeZoneSel.val()).format('YYYY-MM-DD HH:mm:ss');
 $('#dateTime').val(t);
 });
 });
