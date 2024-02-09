@@ -38,15 +38,19 @@ To learn more about &lt;a href="https://curlconverter.com/">curlconverter&lt;/a>
 &lt;/div>
 &lt;/div>
 &lt;div class="mb-3 row">
-&lt;div class="col-sm">
+&lt;div class="col">
 &lt;input type="text" class="form-control" id="unixTime" >
+&lt;/div>
+&lt;div class="col">
 &lt;select class="form-select form-select-sm" id="unixTimeUnit">
 &lt;option value="s" >s&lt;/option>
 &lt;option value="ms" >ms&lt;/option>
 &lt;/select>
 &lt;/div>
-&lt;div class="col-sm">
+&lt;div class="col">
 &lt;select class="form-select form-select-sm mb-3" aria-label="Time Zone" id="timeZone">&lt;/select>
+&lt;/div>
+&lt;div class="col">
 &lt;input type="text" class="form-control" id="dateTime" placeholder="YYYY-MM-DD HH:mm:ss, e.g. 2024-02-09 07:43:26" >
 &lt;/div>
 &lt;/div>
