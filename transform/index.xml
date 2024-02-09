@@ -74,7 +74,7 @@ setInterval(function(){
 $('#nowTimestamp').text(Date.parse(new Date())/1000);
 }, 1000);
 $('#timestamp2date').click(function(){
-timestamp = $('#timestamp').val()
+timestamp = parseInt($('#timestamp').val(), 10)
 timestampUnit = $('#timestampUnit').val()
 switch (timestampUnit) {
 case 's':
