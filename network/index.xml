@@ -4,8 +4,8 @@
 &lt;br />
 To learn more about &lt;a href="https://f.tomhjx.top/proxy/auto.clashx.yaml">Free ClashX Configuration Yaml&lt;/a></description></item><item><title>Network: IP Information</title><link>/network/ip-information/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>/network/ip-information/</guid><description>
 &lt;div class="container-fluid">
-&lt;div class="input-group mb-3 row">
-&lt;input type="text" class="form-control w-25" id="ipInput" placeholder="IPv4/IPv6/Domain" />
+&lt;div class="input-group mb-3 row w-25">
+&lt;input type="text" class="form-control" id="ipInput" placeholder="IPv4/IPv6/Domain" />
 &lt;button class="btn btn-outline-primary" type="button" id="query">Query&lt;/button>
 &lt;/div>
 &lt;div class="mb-3 row">
