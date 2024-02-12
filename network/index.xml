@@ -11,8 +11,24 @@ To learn more about &lt;a href="https://f.tomhjx.top/proxy/auto.clashx.yaml">Fre
 &lt;button class="btn btn-outline-primary btn-sm" id="query">Query&lt;/button>
 &lt;/div>
 &lt;div class="mb-3 row">
-&lt;div class="col p-3">Organization&lt;/div>
+&lt;div class="col p-3">Country Code:&lt;/div>
+&lt;div class="col p-3" id="ipCC">&lt;/div>
+&lt;/div>
+&lt;div class="mb-3 row">
+&lt;div class="col p-3">Postal Code:&lt;/div>
+&lt;div class="col p-3" id="ipPC">&lt;/div>
+&lt;/div>
+&lt;div class="mb-3 row">
+&lt;div class="col p-3">Time Zone:&lt;/div>
+&lt;div class="col p-3" id="ipTZ">&lt;/div>
+&lt;/div>
+&lt;div class="mb-3 row">
+&lt;div class="col p-3">Organization:&lt;/div>
 &lt;div class="col p-3" id="ipOrganization">&lt;/div>
+&lt;/div>
+&lt;div class="mb-3 row">
+&lt;div class="col p-3">Organization (ASN):&lt;/div>
+&lt;div class="col p-3" id="ipOrganizationAsn">&lt;/div>
 &lt;/div>
 &lt;/div>
 &lt;script>
@@ -22,6 +38,10 @@ ip = $('#ipInput').val();
 $.getJSON("https://api.ip.sb/geoip/"+ip,
 function(d) {
 $('#ipOrganization').text(d.organization);
+$('#ipOrganizationAsn').text(d.asn_organization);
+$('#ipCC').text(d.asn_organization);
+$('#ipTZ').text(d.country_code);
+$('#ipPC').text(d.postal_code);
 }
 );
 });
