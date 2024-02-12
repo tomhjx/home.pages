@@ -9,7 +9,7 @@ To learn more about &lt;a href="https://f.tomhjx.top/proxy/auto.clashx.yaml">Fre
 &lt;button class="btn btn-outline-primary form-control" type="button" id="query">Query&lt;/button>
 &lt;/div>
 &lt;div class="mb-3 row">
-&lt;table class="table">
+&lt;table class="table-primary table-striped">
 &lt;tr>
 &lt;th scope="row">IP&lt;/th>
 &lt;td id="ip">&lt;/td>
@@ -22,19 +22,19 @@ To learn more about &lt;a href="https://f.tomhjx.top/proxy/auto.clashx.yaml">Fre
 &lt;th scope="row">Postal Code&lt;/th>
 &lt;td id="ipPC">&lt;/td>
 &lt;/tr>
+&lt;tr>
+&lt;th scope="row">Time Zone&lt;/th>
+&lt;td id="ipTZ">&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;th scope="row">Organization&lt;/th>
+&lt;td id="ipOrganization">&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;th scope="row">Organization (ASN)&lt;/th>
+&lt;td id="ipOrganizationAsn">&lt;/td>
+&lt;/tr>
 &lt;/table>
-&lt;/div>
-&lt;div class="mb-3 row">
-&lt;div class="col p-3">Time Zone:&lt;/div>
-&lt;div class="col p-3" id="ipTZ">&lt;/div>
-&lt;/div>
-&lt;div class="mb-3 row">
-&lt;div class="col p-3">Organization:&lt;/div>
-&lt;div class="col p-3" id="ipOrganization">&lt;/div>
-&lt;/div>
-&lt;div class="mb-3 row">
-&lt;div class="col p-3">Organization (ASN):&lt;/div>
-&lt;div class="col p-3" id="ipOrganizationAsn">&lt;/div>
 &lt;/div>
 &lt;/div>
 &lt;script>
