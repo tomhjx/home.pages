@@ -41,7 +41,7 @@ To learn more about &lt;a href="https://f.tomhjx.top/proxy/auto.clashx.yaml">Fre
 $(function(){
 $('#query').click(function(){
 ip = $('#ipInput').val();
-$.getJSON("https://api.ip.sb/geoip/"+ip,
+$.getJSON("https://api.ip.sb/geoip/"+encodeURIComponent(ip),
 function(d) {
 $('#ip').text(d.ip);
 $('#ipOrganization').text(d.organization);
