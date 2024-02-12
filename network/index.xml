@@ -15,16 +15,28 @@ To learn more about &lt;a href="https://f.tomhjx.top/proxy/auto.clashx.yaml">Fre
 &lt;td id="ip">&lt;/td>
 &lt;/tr>
 &lt;tr>
+&lt;th scope="row">Latitude&lt;/th>
+&lt;td id="ipLatitude">&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;th scope="row">Longitude&lt;/th>
+&lt;td id="ipLongitude">&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;th scope="row">Time Zone&lt;/th>
+&lt;td id="ipTZ">&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;th scope="row">Country&lt;/th>
+&lt;td id="ipC">&lt;/td>
+&lt;/tr>
+&lt;tr>
 &lt;th scope="row">Country Code&lt;/th>
 &lt;td id="ipCC">&lt;/td>
 &lt;/tr>
 &lt;tr>
 &lt;th scope="row">Postal Code&lt;/th>
 &lt;td id="ipPC">&lt;/td>
-&lt;/tr>
-&lt;tr>
-&lt;th scope="row">Time Zone&lt;/th>
-&lt;td id="ipTZ">&lt;/td>
 &lt;/tr>
 &lt;tr>
 &lt;th scope="row">Organization&lt;/th>
@@ -46,9 +58,12 @@ function(d) {
 $('#ip').text(d.ip);
 $('#ipOrganization').text(d.organization);
 $('#ipOrganizationAsn').text(d.asn_organization);
-$('#ipCC').text(d.asn_organization);
-$('#ipTZ').text(d.country_code);
+$('#ipTZ').text(d.timezone);
+$('#ipCC').text(d.country_code);
+$('#ipC').text(d.country);
 $('#ipPC').text(d.postal_code);
+$('#ipLatitude').text(d.latitude);
+$('#ipLongitude').text(d.longitude);
 }
 );
 });
