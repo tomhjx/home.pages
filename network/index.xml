@@ -6,7 +6,7 @@ To learn more about &lt;a href="https://f.tomhjx.top/proxy/auto.clashx.yaml">Fre
 &lt;div class="container-fluid">
 &lt;div class="input-group mb-3 row">
 &lt;input type="text" class="form-control w-25" id="ipInput" placeholder="IPv4/IPv6/Domain" />
-&lt;button class="btn btn-outline-primary btn-sm" type="button" id="query">Query&lt;/button>
+&lt;button class="btn btn-outline-primary" type="button" id="query">Query&lt;/button>
 &lt;/div>
 &lt;div class="mb-3 row">
 &lt;div class="col p-3">Country Code:&lt;/div>
