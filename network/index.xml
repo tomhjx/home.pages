@@ -9,7 +9,7 @@ To learn more about &lt;a href="https://f.tomhjx.top/proxy/auto.clashx.yaml">Fre
 &lt;button class="btn btn-outline-primary form-control" type="button" id="query">Query&lt;/button>
 &lt;/div>
 &lt;div class="mb-3 row">
-&lt;table class="table table-info table-hover table-bordered">
+&lt;table class="table table-info table-hover table-bordered table-striped-columns">
 &lt;tr>
 &lt;th scope="row">IP&lt;/th>
 &lt;td id="ip">&lt;/td>
