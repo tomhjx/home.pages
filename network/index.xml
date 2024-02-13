@@ -27,12 +27,24 @@ To learn more about &lt;a href="https://f.tomhjx.top/proxy/auto.clashx.yaml">Fre
 &lt;td id="ipTZ">&lt;/td>
 &lt;/tr>
 &lt;tr>
+&lt;th scope="row">Country Code&lt;/th>
+&lt;td id="ipCC">&lt;/td>
+&lt;/tr>
+&lt;tr>
 &lt;th scope="row">Country&lt;/th>
 &lt;td id="ipC">&lt;/td>
 &lt;/tr>
 &lt;tr>
-&lt;th scope="row">Country Code&lt;/th>
-&lt;td id="ipCC">&lt;/td>
+&lt;th scope="row">Region&lt;/th>
+&lt;td id="ipRegion">&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;th scope="row">Region Code&lt;/th>
+&lt;td id="ipRegionCode">&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;th scope="row">City&lt;/th>
+&lt;td id="ipCity">&lt;/td>
 &lt;/tr>
 &lt;tr>
 &lt;th scope="row">Postal Code&lt;/th>
@@ -43,8 +55,16 @@ To learn more about &lt;a href="https://f.tomhjx.top/proxy/auto.clashx.yaml">Fre
 &lt;td id="ipOrganization">&lt;/td>
 &lt;/tr>
 &lt;tr>
-&lt;th scope="row">Organization (ASN)&lt;/th>
-&lt;td id="ipOrganizationAsn">&lt;/td>
+&lt;th scope="row">ASN&lt;/th>
+&lt;td id="ipAsn">&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;th scope="row">ASN Organization&lt;/th>
+&lt;td id="ipAsnOrganization">&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;th scope="row">ISP&lt;/th>
+&lt;td id="ipISP">&lt;/td>
 &lt;/tr>
 &lt;/table>
 &lt;/div>
@@ -57,13 +77,18 @@ $.getJSON("https://api.ip.sb/geoip/"+encodeURIComponent(ip),
 function(d) {
 $('#ip').text(d.ip);
 $('#ipOrganization').text(d.organization);
-$('#ipOrganizationAsn').text(d.asn_organization);
+$('#ipAsn').text(d.asn);
+$('#ipAsnOrganization').text(d.asn_organization);
 $('#ipTZ').text(d.timezone);
 $('#ipCC').text(d.country_code);
 $('#ipC').text(d.country);
+$('#ipRegion').text(d.region);
+$('#ipRegionCode').text(d.region_code);
+$('#ipCity').text(d.city);
 $('#ipPC').text(d.postal_code);
 $('#ipLatitude').text(d.latitude);
 $('#ipLongitude').text(d.longitude);
+$('#ipISP').text(d.isp);
 }
 );
 });
