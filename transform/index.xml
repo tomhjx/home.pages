@@ -129,30 +129,10 @@ reader.readAsDataURL(input.files[0]);
 &lt;link rel="stylesheet" href="/css/content/docs/formatter/json-formatter.css">
 &lt;script src="/js/content/docs/formatter/json-formatter.js" defer>&lt;/script>
 &lt;section class="json-formatter container-xl">
-&lt;div class="formatter-hero gradient-shell">
-&lt;div>
-&lt;p class="eyebrow">Transform · Developer Utilities&lt;/p>
-&lt;h1 class="mb-3">JSON Formatter &amp;amp; Validator&lt;/h1>
-&lt;p class="lead mb-4">Beautify raw JSON, uncover syntax issues, and keep payloads consistent before they reach your repos, docs, or API gateways.&lt;/p>
-&lt;div class="hero-actions">
-&lt;button type="button" class="btn btn-dark" data-action="format">Format JSON&lt;/button>
-&lt;button type="button" class="btn btn-outline-dark" data-action="minify">Minify JSON&lt;/button>
-&lt;/div>
-&lt;/div>
-&lt;ul class="hero-meta list-unstyled mb-0">
-&lt;li>
-&lt;span class="hero-meta__label">Latency&lt;/span>
-Instant, offline formatting
-&lt;/li>
-&lt;li>
-&lt;span class="hero-meta__label">Validation&lt;/span>
-Syntax errors highlighted inline
-&lt;/li>
-&lt;li>
-&lt;span class="hero-meta__label">Views&lt;/span>
-Text + collapsible tree output
-&lt;/li>
-&lt;/ul>
+&lt;div class="formatter-hero">
+&lt;p class="eyebrow mb-2">Transform tool&lt;/p>
+&lt;h1 class="mb-2">JSON Formatter &amp;amp; Validator&lt;/h1>
+&lt;p class="lead mb-0">Drop JSON, format it, validate it, and copy the result without leaving your browser.&lt;/p>
 &lt;/div>
 &lt;div class="formatter-toolbar d-flex flex-wrap align-items-center" role="group" aria-label="Formatter controls">
 &lt;div class="btn-group" role="group" aria-label="Formatting actions">
@@ -206,31 +186,6 @@ Indent
 &lt;div class="status-panel mt-4" id="json-status" role="status" aria-live="polite">
 Paste JSON or drop a file to begin. Your data never leaves the browser.
 &lt;/div>
-&lt;section class="mt-5">
-&lt;h2>Why developers rely on this JSON formatter&lt;/h2>
-&lt;ul>
-&lt;li>Readable output with consistent indentation and monospace typography.&lt;/li>
-&lt;li>Built-in validation that flags syntax errors before JSON hits an API or repository.&lt;/li>
-&lt;li>Single-click minify mode to shrink payloads for network transfers.&lt;/li>
-&lt;li>Privacy-first workflow: everything runs locally in your browser.&lt;/li>
-&lt;/ul>
-&lt;/section>
-&lt;section class="mt-4">
-&lt;h2>How to format JSON online&lt;/h2>
-&lt;ol>
-&lt;li>Paste or drop raw JSON into the left editor.&lt;/li>
-&lt;li>Pick the indentation width you prefer and toggle key sorting if needed.&lt;/li>
-&lt;li>Select &lt;strong>Format JSON&lt;/strong> for readable output or &lt;strong>Minify JSON&lt;/strong> for compact payloads.&lt;/li>
-&lt;li>Copy the result to share in documentation, pull requests, or API clients.&lt;/li>
-&lt;/ol>
-&lt;/section>
-&lt;section class="mt-4">
-&lt;h2>Frequently asked questions&lt;/h2>
-&lt;h3>Does this JSON formatter validate my payload?&lt;/h3>
-&lt;p>Yes. The formatter highlights syntax errors with clear messages and never sends data to a server.&lt;/p>
-&lt;h3>Can I minify JSON for production?&lt;/h3>
-&lt;p>Use the &lt;strong>Minify JSON&lt;/strong> action to remove whitespace and keep payloads light for storage or network transfers.&lt;/p>
-&lt;/section>
 &lt;/section>
 &lt;script type="application/ld+json">
 {
