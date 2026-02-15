@@ -125,25 +125,27 @@ reader.readAsDataURL(input.files[0]);
 }
 });
 });
-&lt;/script></description></item><item><title>Transform: JSON Formatter</title><link>/transform/jsonformatter/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>/transform/jsonformatter/</guid><description>
+&lt;/script></description></item><item><title>Transform: JSON Formatter &amp; Validator</title><link>/transform/jsonformatter/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>/transform/jsonformatter/</guid><description>
 &lt;link rel="stylesheet" href="/css/content/docs/formatter/json-formatter.css">
 &lt;script src="/js/content/docs/formatter/json-formatter.js" defer>&lt;/script>
-&lt;section class="json-formatter container">
-&lt;header class="mb-4 text-center">
+&lt;section class="json-formatter container-xl">
+&lt;div class="formatter-hero text-center mx-auto">
 &lt;p class="eyebrow">Transform · Developer Utilities&lt;/p>
-&lt;h1 class="mb-2">JSON Formatter &amp;amp; Validator&lt;/h1>
-&lt;p class="lead mb-0">Clean JSON instantly, spot syntax errors, and publish shareable payloads with search-friendly copy that AI agents understand.&lt;/p>
-&lt;/header>
-&lt;div class="formatter-toolbar d-flex flex-wrap gap-2 mb-3 align-items-center" role="group" aria-label="Formatter controls">
+&lt;h1 class="mb-3">JSON Formatter &amp;amp; Validator&lt;/h1>
+&lt;p class="lead mb-4">Beautify raw JSON, uncover syntax errors, and ship readable payloads for documentation, pull requests, and API clients.&lt;/p>
+&lt;ul class="hero-meta list-unstyled d-flex flex-wrap justify-content-center gap-3 mb-0">
+&lt;li>Works entirely in your browser&lt;/li>
+&lt;li>Syntax validation on every run&lt;/li>
+&lt;li>Copy, minify, and tree view modes&lt;/li>
+&lt;/ul>
+&lt;/div>
+&lt;div class="formatter-toolbar d-flex flex-wrap align-items-center" role="group" aria-label="Formatter controls">
 &lt;div class="btn-group" role="group" aria-label="Formatting actions">
-&lt;button type="button" class="btn btn-primary btn-sm" data-action="format">Format JSON&lt;/button>
-&lt;button type="button" class="btn btn-outline-primary btn-sm" data-action="minify">Minify JSON&lt;/button>
+&lt;button type="button" class="btn btn-primary" data-action="format">Format JSON&lt;/button>
+&lt;button type="button" class="btn btn-outline-primary" data-action="minify">Minify JSON&lt;/button>
+&lt;button type="button" class="btn btn-outline-secondary" data-action="copy">Copy Result&lt;/button>
 &lt;/div>
-&lt;div class="btn-group" role="group" aria-label="Utility actions">
-&lt;button type="button" class="btn btn-outline-secondary btn-sm" data-action="copy">Copy Output&lt;/button>
-&lt;button type="button" class="btn btn-outline-secondary btn-sm" data-action="clear">Clear All&lt;/button>
-&lt;/div>
-&lt;label class="form-label mb-0 ms-md-3">
+&lt;label class="form-label mb-0 ms-auto">
 Indent
 &lt;select id="indent-size" class="form-select form-select-sm d-inline-block w-auto ms-1">
 &lt;option value="2">2 spaces&lt;/option>
@@ -151,46 +153,66 @@ Indent
 &lt;option value="tab">Tabs&lt;/option>
 &lt;/select>
 &lt;/label>
-&lt;label class="form-check ms-md-3 mb-0">
+&lt;label class="form-check ms-3 mb-0">
 &lt;input class="form-check-input" type="checkbox" id="sort-keys">
 &lt;span class="form-check-label">Sort keys alphabetically&lt;/span>
 &lt;/label>
 &lt;/div>
-&lt;div class="row g-3">
+&lt;div class="formatter-panels row g-4">
 &lt;div class="col-lg-6">
-&lt;label for="json-input" class="form-label">Source JSON&lt;/label>
-&lt;textarea id="json-input" class="form-control" spellcheck="false" placeholder='Paste JSON or drop a .json file here (example: {"name":"Home"})'>&lt;/textarea>
+&lt;div class="formatter-card">
+&lt;div class="formatter-card__header">
+&lt;div>
+&lt;p class="label">Source JSON&lt;/p>
+&lt;span class="helper">Paste raw JSON or drop a .json file.&lt;/span>
+&lt;/div>
+&lt;button type="button" class="btn btn-link btn-sm text-decoration-none" data-action="clear">Clear&lt;/button>
+&lt;/div>
+&lt;textarea id="json-input" class="form-control" spellcheck="false" placeholder='{"name":"Home Source","features":["format","validate"]}'>&lt;/textarea>
+&lt;/div>
 &lt;/div>
 &lt;div class="col-lg-6">
-&lt;label for="json-output" class="form-label">Formatted result&lt;/label>
-&lt;textarea id="json-output" class="form-control" readonly spellcheck="false" placeholder="Your formatted JSON will appear here.">&lt;/textarea>
+&lt;div class="formatter-card">
+&lt;div class="formatter-card__header align-items-center">
+&lt;div>
+&lt;p class="label">Output&lt;/p>
+&lt;span class="helper">Switch between formatted text and collapsible tree.&lt;/span>
+&lt;/div>
+&lt;div class="btn-group btn-group-sm view-toggle" role="group" aria-label="View mode">
+&lt;button type="button" class="btn btn-outline-secondary active" data-view="pretty">Formatted&lt;/button>
+&lt;button type="button" class="btn btn-outline-secondary" data-view="tree">Tree&lt;/button>
 &lt;/div>
 &lt;/div>
-&lt;div class="status-panel mt-3" id="json-status" role="status" aria-live="polite">
-Drop any JSON payload to get started.
+&lt;textarea id="json-output" class="form-control" readonly spellcheck="false" placeholder="Formatted JSON will appear here.">&lt;/textarea>
+&lt;div id="json-tree" class="json-tree" hidden>&lt;/div>
+&lt;/div>
+&lt;/div>
+&lt;/div>
+&lt;div class="status-panel mt-4" id="json-status" role="status" aria-live="polite">
+Paste JSON or drop a file to begin. Your data never leaves the browser.
 &lt;/div>
 &lt;section class="mt-5">
-&lt;h2>Why this JSON formatter is SEO-ready&lt;/h2>
-&lt;p>The layout keeps interactive controls above the fold, pairs every textarea with descriptive labels, and ships with structured data so search engines categorize the page as a developer tool. Lightweight copy helps AI crawlers summarize the utility with the same clarity humans see.&lt;/p>
+&lt;h2>Why developers rely on this JSON formatter&lt;/h2>
 &lt;ul>
-&lt;li>Readable English headings that highlight the use case.&lt;/li>
-&lt;li>Schema.org &lt;code>SoftwareApplication&lt;/code> metadata for discoverability.&lt;/li>
-&lt;li>Accessible status messaging for validation feedback.&lt;/li>
+&lt;li>Readable output with consistent indentation and monospace typography.&lt;/li>
+&lt;li>Built-in validation that flags syntax errors before JSON hits an API or repository.&lt;/li>
+&lt;li>Single-click minify mode to shrink payloads for network transfers.&lt;/li>
+&lt;li>Privacy-first workflow: everything runs locally in your browser.&lt;/li>
 &lt;/ul>
 &lt;/section>
 &lt;section class="mt-4">
-&lt;h2>How to format JSON in this tool&lt;/h2>
+&lt;h2>How to format JSON online&lt;/h2>
 &lt;ol>
-&lt;li>Paste or drop your JSON into the left text area.&lt;/li>
-&lt;li>Select indentation width and optionally sort keys alphabetically.&lt;/li>
-&lt;li>Choose &lt;strong>Format JSON&lt;/strong> for readable output or &lt;strong>Minify JSON&lt;/strong> for compact payloads.&lt;/li>
-&lt;li>Use &lt;strong>Copy Output&lt;/strong> to send the cleaned payload to teammates, docs, or AI prompts.&lt;/li>
+&lt;li>Paste or drop raw JSON into the left editor.&lt;/li>
+&lt;li>Pick the indentation width you prefer and toggle key sorting if needed.&lt;/li>
+&lt;li>Select &lt;strong>Format JSON&lt;/strong> for readable output or &lt;strong>Minify JSON&lt;/strong> for compact payloads.&lt;/li>
+&lt;li>Copy the result to share in documentation, pull requests, or API clients.&lt;/li>
 &lt;/ol>
 &lt;/section>
 &lt;section class="mt-4">
 &lt;h2>Frequently asked questions&lt;/h2>
 &lt;h3>Does this JSON formatter validate my payload?&lt;/h3>
-&lt;p>Yes. The formatter highlights syntax errors with clear messages and never sends data to a remote API.&lt;/p>
+&lt;p>Yes. The formatter highlights syntax errors with clear messages and never sends data to a server.&lt;/p>
 &lt;h3>Can I minify JSON for production?&lt;/h3>
 &lt;p>Use the &lt;strong>Minify JSON&lt;/strong> action to remove whitespace and keep payloads light for storage or network transfers.&lt;/p>
 &lt;/section>
