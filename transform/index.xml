@@ -153,11 +153,6 @@ Paste JSON or drop a file to begin. Your data never leaves the browser.
 &lt;div class="card-body d-flex flex-column">
 &lt;div class="d-flex justify-content-between align-items-center mb-2">
 &lt;p class="text-uppercase text-muted small mb-0">View&lt;/p>
-&lt;div class="btn-group btn-group-sm view-toggle" role="group" aria-label="View mode">
-&lt;button type="button" class="btn btn-outline-primary btn-sm active" data-view="pretty">Formatted&lt;/button>
-&lt;button type="button" class="btn btn-outline-primary btn-sm" data-view="tree">Tree&lt;/button>
-&lt;/div>
-&lt;div class="col-sm-4">
 &lt;label class="form-label text-uppercase small text-muted mb-1" for="indent-size">Indent&lt;/label>
 &lt;select id="indent-size" class="form-select form-select-sm">
 &lt;option value="2">2 spaces&lt;/option>
@@ -168,6 +163,9 @@ Paste JSON or drop a file to begin. Your data never leaves the browser.
 &lt;input class="form-check-input" type="checkbox" id="sort-keys">
 &lt;label class="form-check-label" for="sort-keys">Sort keys alphabetically&lt;/label>
 &lt;/div>
+&lt;div class="btn-group btn-group-sm view-toggle" role="group" aria-label="View mode">
+&lt;button type="button" class="btn btn-outline-primary btn-sm active" data-view="pretty">Formatted&lt;/button>
+&lt;button type="button" class="btn btn-outline-primary btn-sm" data-view="tree">Tree&lt;/button>
 &lt;/div>
 &lt;/div>
 &lt;textarea id="json-output" class="form-control flex-grow-1 mb-2" style="height: 500px;" readonly spellcheck="false" placeholder="Formatted JSON will appear here.">&lt;/textarea>
