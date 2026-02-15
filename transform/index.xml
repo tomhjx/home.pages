@@ -125,6 +125,91 @@ reader.readAsDataURL(input.files[0]);
 }
 });
 });
+&lt;/script></description></item><item><title>Transform: JSON Formatter</title><link>/transform/jsonformatter/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>/transform/jsonformatter/</guid><description>
+&lt;link rel="stylesheet" href="/css/content/docs/formatter/json-formatter.css">
+&lt;script src="/js/content/docs/formatter/json-formatter.js" defer>&lt;/script>
+&lt;section class="json-formatter container">
+&lt;header class="mb-4 text-center">
+&lt;p class="eyebrow">Transform · Developer Utilities&lt;/p>
+&lt;h1 class="mb-2">JSON Formatter &amp;amp; Validator&lt;/h1>
+&lt;p class="lead mb-0">Clean JSON instantly, spot syntax errors, and publish shareable payloads with search-friendly copy that AI agents understand.&lt;/p>
+&lt;/header>
+&lt;div class="formatter-toolbar d-flex flex-wrap gap-2 mb-3 align-items-center" role="group" aria-label="Formatter controls">
+&lt;div class="btn-group" role="group" aria-label="Formatting actions">
+&lt;button type="button" class="btn btn-primary btn-sm" data-action="format">Format JSON&lt;/button>
+&lt;button type="button" class="btn btn-outline-primary btn-sm" data-action="minify">Minify JSON&lt;/button>
+&lt;/div>
+&lt;div class="btn-group" role="group" aria-label="Utility actions">
+&lt;button type="button" class="btn btn-outline-secondary btn-sm" data-action="copy">Copy Output&lt;/button>
+&lt;button type="button" class="btn btn-outline-secondary btn-sm" data-action="clear">Clear All&lt;/button>
+&lt;/div>
+&lt;label class="form-label mb-0 ms-md-3">
+Indent
+&lt;select id="indent-size" class="form-select form-select-sm d-inline-block w-auto ms-1">
+&lt;option value="2">2 spaces&lt;/option>
+&lt;option value="4" selected>4 spaces&lt;/option>
+&lt;option value="tab">Tabs&lt;/option>
+&lt;/select>
+&lt;/label>
+&lt;label class="form-check ms-md-3 mb-0">
+&lt;input class="form-check-input" type="checkbox" id="sort-keys">
+&lt;span class="form-check-label">Sort keys alphabetically&lt;/span>
+&lt;/label>
+&lt;/div>
+&lt;div class="row g-3">
+&lt;div class="col-lg-6">
+&lt;label for="json-input" class="form-label">Source JSON&lt;/label>
+&lt;textarea id="json-input" class="form-control" spellcheck="false" placeholder='Paste JSON or drop a .json file here (example: {"name":"Home"})'>&lt;/textarea>
+&lt;/div>
+&lt;div class="col-lg-6">
+&lt;label for="json-output" class="form-label">Formatted result&lt;/label>
+&lt;textarea id="json-output" class="form-control" readonly spellcheck="false" placeholder="Your formatted JSON will appear here.">&lt;/textarea>
+&lt;/div>
+&lt;/div>
+&lt;div class="status-panel mt-3" id="json-status" role="status" aria-live="polite">
+Drop any JSON payload to get started.
+&lt;/div>
+&lt;section class="mt-5">
+&lt;h2>Why this JSON formatter is SEO-ready&lt;/h2>
+&lt;p>The layout keeps interactive controls above the fold, pairs every textarea with descriptive labels, and ships with structured data so search engines categorize the page as a developer tool. Lightweight copy helps AI crawlers summarize the utility with the same clarity humans see.&lt;/p>
+&lt;ul>
+&lt;li>Readable English headings that highlight the use case.&lt;/li>
+&lt;li>Schema.org &lt;code>SoftwareApplication&lt;/code> metadata for discoverability.&lt;/li>
+&lt;li>Accessible status messaging for validation feedback.&lt;/li>
+&lt;/ul>
+&lt;/section>
+&lt;section class="mt-4">
+&lt;h2>How to format JSON in this tool&lt;/h2>
+&lt;ol>
+&lt;li>Paste or drop your JSON into the left text area.&lt;/li>
+&lt;li>Select indentation width and optionally sort keys alphabetically.&lt;/li>
+&lt;li>Choose &lt;strong>Format JSON&lt;/strong> for readable output or &lt;strong>Minify JSON&lt;/strong> for compact payloads.&lt;/li>
+&lt;li>Use &lt;strong>Copy Output&lt;/strong> to send the cleaned payload to teammates, docs, or AI prompts.&lt;/li>
+&lt;/ol>
+&lt;/section>
+&lt;section class="mt-4">
+&lt;h2>Frequently asked questions&lt;/h2>
+&lt;h3>Does this JSON formatter validate my payload?&lt;/h3>
+&lt;p>Yes. The formatter highlights syntax errors with clear messages and never sends data to a remote API.&lt;/p>
+&lt;h3>Can I minify JSON for production?&lt;/h3>
+&lt;p>Use the &lt;strong>Minify JSON&lt;/strong> action to remove whitespace and keep payloads light for storage or network transfers.&lt;/p>
+&lt;/section>
+&lt;/section>
+&lt;script type="application/ld+json">
+{
+"@context": "https://schema.org",
+"@type": "SoftwareApplication",
+"name": "JSON Formatter",
+"applicationCategory": "DeveloperApplication",
+"operatingSystem": "Any",
+"description": "Format, validate, and minify JSON directly in your browser.",
+"offers": {
+"@type": "Offer",
+"price": "0",
+"priceCurrency": "USD"
+},
+"url": "{{ .Permalink }}"
+}
 &lt;/script></description></item><item><title>Transform: JSON to Code</title><link>/transform/json2code/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>/transform/json2code/</guid><description>
 &lt;iframe allowfullscreen width="1900" height="1200" name="iframe" src="https://app.quicktype.io/" frameborder="0" scrolling="yes" >
 &lt;/iframe>
