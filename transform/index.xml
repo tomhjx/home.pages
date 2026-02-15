@@ -130,10 +130,10 @@ reader.readAsDataURL(input.files[0]);
 &lt;script src="/js/content/docs/formatter/json-formatter.js" defer>&lt;/script>
 &lt;section class="json-formatter">
 &lt;div class="formatter-toolbar d-flex flex-wrap align-items-center" role="group" aria-label="Formatter controls">
-&lt;div class="btn-group" role="group" aria-label="Formatting actions">
-&lt;button type="button" class="btn btn-outline-primary" data-action="format">Format JSON&lt;/button>
-&lt;button type="button" class="btn btn-outline-primary" data-action="minify">Minify JSON&lt;/button>
-&lt;button type="button" class="btn btn-outline-secondary" data-action="copy">Copy Result&lt;/button>
+&lt;div class="btn-group btn-group-sm" role="group" aria-label="Formatting actions">
+&lt;button type="button" class="btn btn-outline-primary" data-action="format">Format&lt;/button>
+&lt;button type="button" class="btn btn-outline-primary" data-action="minify">Minify&lt;/button>
+&lt;button type="button" class="btn btn-outline-secondary" data-action="copy">Copy&lt;/button>
 &lt;/div>
 &lt;label class="form-label mb-0 ms-auto">
 Indent
