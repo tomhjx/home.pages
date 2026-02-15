@@ -144,7 +144,7 @@ Paste JSON or drop a file to begin. Your data never leaves the browser.
 &lt;button type="button" class="btn btn-outline-primary" data-action="clear">Clear&lt;/button>
 &lt;/div>
 &lt;/div>
-&lt;textarea id="json-input" class="form-control flex-grow-1" spellcheck="false" placeholder='{"name":"Home Source","features":["format","validate"]}'>&lt;/textarea>
+&lt;textarea id="json-input" class="form-control flex-grow-1" style="height: 500px;" spellcheck="false" placeholder='{"name":"Home Source","features":["format","validate"]}'>&lt;/textarea>
 &lt;/div>
 &lt;/div>
 &lt;/div>
@@ -164,15 +164,13 @@ Paste JSON or drop a file to begin. Your data never leaves the browser.
 &lt;option value="4" selected>4 spaces&lt;/option>
 &lt;option value="tab">Tabs&lt;/option>
 &lt;/select>
-&lt;/div>
-&lt;div class="col-sm-3">
 &lt;div class="form-check mt-3 mt-sm-0">
 &lt;input class="form-check-input" type="checkbox" id="sort-keys">
 &lt;label class="form-check-label" for="sort-keys">Sort keys alphabetically&lt;/label>
 &lt;/div>
 &lt;/div>
 &lt;/div>
-&lt;textarea id="json-output" class="form-control flex-grow-1 mb-2" readonly spellcheck="false" placeholder="Formatted JSON will appear here.">&lt;/textarea>
+&lt;textarea id="json-output" class="form-control flex-grow-1 mb-2" style="height: 500px;" readonly spellcheck="false" placeholder="Formatted JSON will appear here.">&lt;/textarea>
 &lt;div id="json-tree" class="json-tree border rounded" hidden>&lt;/div>
 &lt;/div>
 &lt;/div>
