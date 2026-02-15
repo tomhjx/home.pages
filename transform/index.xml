@@ -129,11 +129,6 @@ reader.readAsDataURL(input.files[0]);
 &lt;link rel="stylesheet" href="/css/content/docs/formatter/json-formatter.css">
 &lt;script src="/js/content/docs/formatter/json-formatter.js" defer>&lt;/script>
 &lt;section class="json-formatter">
-&lt;div class="formatter-hero">
-&lt;p class="eyebrow mb-2">Transform tool&lt;/p>
-&lt;h1 class="mb-2">JSON Formatter &amp;amp; Validator&lt;/h1>
-&lt;p class="lead mb-0">Drop JSON, format it, validate it, and copy the result without leaving your browser.&lt;/p>
-&lt;/div>
 &lt;div class="formatter-toolbar d-flex flex-wrap align-items-center" role="group" aria-label="Formatter controls">
 &lt;div class="btn-group" role="group" aria-label="Formatting actions">
 &lt;button type="button" class="btn btn-outline-primary" data-action="format">Format JSON&lt;/button>
