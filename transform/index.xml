@@ -165,13 +165,25 @@ reader.readAsDataURL(input.files[0]);
 &lt;div class="card shadow-sm h-500">
 &lt;div class="card-body d-flex flex-column">
 &lt;div class="d-flex justify-content-between align-items-center mb-2">
-&lt;p class="text-uppercase text-muted small mb-0">Output&lt;/p>
-&lt;label class="form-label text-uppercase small text-muted mb-1 d-block">View&lt;/label>
+&lt;p class="text-uppercase text-muted small mb-0">View&lt;/p>
 &lt;div class="btn-group btn-group-sm view-toggle" role="group" aria-label="View mode">
 &lt;button type="button" class="btn btn-outline-primary btn-sm active" data-view="pretty">Formatted&lt;/button>
 &lt;button type="button" class="btn btn-outline-primary btn-sm" data-view="tree">Tree&lt;/button>
 &lt;/div>
-&lt;button type="button" class="btn btn-outline-primary btn-sm" data-action="copy">Copy&lt;/button>
+&lt;div class="col-sm-4">
+&lt;label class="form-label text-uppercase small text-muted mb-1" for="indent-size">Indent&lt;/label>
+&lt;select id="indent-size" class="form-select form-select-sm">
+&lt;option value="2">2 spaces&lt;/option>
+&lt;option value="4" selected>4 spaces&lt;/option>
+&lt;option value="tab">Tabs&lt;/option>
+&lt;/select>
+&lt;/div>
+&lt;div class="col-sm-3">
+&lt;div class="form-check mt-3 mt-sm-0">
+&lt;input class="form-check-input" type="checkbox" id="sort-keys">
+&lt;label class="form-check-label" for="sort-keys">Sort keys alphabetically&lt;/label>
+&lt;/div>
+&lt;/div>
 &lt;/div>
 &lt;textarea id="json-output" class="form-control flex-grow-1 mb-2" readonly spellcheck="false" placeholder="Formatted JSON will appear here.">&lt;/textarea>
 &lt;div id="json-tree" class="json-tree border rounded" hidden>&lt;/div>
