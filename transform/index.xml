@@ -128,7 +128,7 @@ reader.readAsDataURL(input.files[0]);
 &lt;/script></description></item><item><title>Transform: JSON Formatter &amp; Validator</title><link>/transform/jsonformatter/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>/transform/jsonformatter/</guid><description>
 &lt;link rel="stylesheet" href="/css/content/docs/formatter/json-formatter.css">
 &lt;script src="/js/content/docs/formatter/json-formatter.js" defer>&lt;/script>
-&lt;section class="json-formatter-docsy container py-4">
+&lt;div class="container-fluid">
 &lt;div class="row align-items-center mb-4 gy-3">
 &lt;div class="col-lg-4 text-lg-end">
 &lt;div class="btn-group btn-group-sm" role="group" aria-label="Formatting actions">
@@ -186,7 +186,7 @@ reader.readAsDataURL(input.files[0]);
 &lt;div class="alert alert-info alert-sm shadow-sm mt-4" id="json-status" role="status" aria-live="polite">
 Paste JSON or drop a file to begin. Your data never leaves the browser.
 &lt;/div>
-&lt;/section>
+&lt;/div>
 &lt;script type="application/ld+json">
 {
 "@context": "https://schema.org",
