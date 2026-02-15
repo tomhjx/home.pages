@@ -128,7 +128,7 @@ reader.readAsDataURL(input.files[0]);
 &lt;/script></description></item><item><title>Transform: JSON Formatter &amp; Validator</title><link>/transform/jsonformatter/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>/transform/jsonformatter/</guid><description>
 &lt;link rel="stylesheet" href="/css/content/docs/formatter/json-formatter.css">
 &lt;script src="/js/content/docs/formatter/json-formatter.js" defer>&lt;/script>
-&lt;section class="json-formatter container-xl">
+&lt;section class="json-formatter">
 &lt;div class="formatter-hero">
 &lt;p class="eyebrow mb-2">Transform tool&lt;/p>
 &lt;h1 class="mb-2">JSON Formatter &amp;amp; Validator&lt;/h1>
