@@ -130,11 +130,6 @@ reader.readAsDataURL(input.files[0]);
 &lt;script src="/js/content/docs/formatter/json-formatter.js" defer>&lt;/script>
 &lt;section class="json-formatter-docsy container py-4">
 &lt;div class="row align-items-center mb-4 gy-3">
-&lt;div class="col-lg-8">
-&lt;p class="text-uppercase text-muted small mb-1">Transform tool&lt;/p>
-&lt;h1 class="h2 mb-2">JSON Formatter &amp;amp; Validator&lt;/h1>
-&lt;p class="text-muted mb-0">Format, validate, minify, and copy JSON payloads instantly with zero network calls.&lt;/p>
-&lt;/div>
 &lt;div class="col-lg-4 text-lg-end">
 &lt;div class="btn-group btn-group-sm" role="group" aria-label="Formatting actions">
 &lt;button type="button" class="btn btn-outline-primary" data-action="format">Format&lt;/button>
@@ -162,8 +157,8 @@ reader.readAsDataURL(input.files[0]);
 &lt;div class="col-sm-5 text-sm-end">
 &lt;label class="form-label text-uppercase small text-muted mb-1 d-block">View&lt;/label>
 &lt;div class="btn-group btn-group-sm view-toggle" role="group" aria-label="View mode">
-&lt;button type="button" class="btn btn-outline-secondary active" data-view="pretty">Formatted&lt;/button>
-&lt;button type="button" class="btn btn-outline-secondary" data-view="tree">Tree&lt;/button>
+&lt;button type="button" class="btn btn-outline-primary btn-sm active" data-view="pretty">Formatted&lt;/button>
+&lt;button type="button" class="btn btn-outline-primary btn-sm" data-view="tree">Tree&lt;/button>
 &lt;/div>
 &lt;/div>
 &lt;/div>
