@@ -131,12 +131,10 @@ reader.readAsDataURL(input.files[0]);
 &lt;section class="json-formatter-docsy container py-4">
 &lt;div class="row align-items-center mb-4 gy-3">
 &lt;div class="col-lg-4 text-lg-end">
-&lt;div class="btn-group btn-group-sm" role="group" aria-label="Formatting actions">
-&lt;button type="button" class="btn btn-outline-primary" data-action="format">Format&lt;/button>
-&lt;button type="button" class="btn btn-outline-primary" data-action="minify">Minify&lt;/button>
-&lt;button type="button" class="btn btn-outline-secondary" data-action="copy">Copy&lt;/button>
-&lt;button type="button" class="btn btn-outline-secondary" data-action="clear">Clear&lt;/button>
-&lt;/div>
+&lt;button type="button" class="btn btn-outline-primary btn-sm" data-action="format">Format&lt;/button>
+&lt;button type="button" class="btn btn-outline-primary btn-sm" data-action="minify">Minify&lt;/button>
+&lt;button type="button" class="btn btn-outline-primary btn-sm" data-action="copy">Copy&lt;/button>
+&lt;button type="button" class="btn btn-outline-primary btn-sm" data-action="clear">Clear&lt;/button>
 &lt;/div>
 &lt;/div>
 &lt;div class="row gy-3 align-items-center mb-4 formatter-controls">
