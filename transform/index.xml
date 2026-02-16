@@ -159,10 +159,8 @@ Paste JSON or drop a file to begin. Your data never leaves the browser.
 &lt;option value="4" selected>4 spaces&lt;/option>
 &lt;option value="tab">Tabs&lt;/option>
 &lt;/select>
-&lt;div class="form-check mt-3 mt-sm-0">
 &lt;input class="form-check-input" type="checkbox" id="sort-keys">
 &lt;label class="form-check-label" for="sort-keys">Sort keys alphabetically&lt;/label>
-&lt;/div>
 &lt;div class="btn-group btn-group-sm view-toggle" role="group" aria-label="View mode">
 &lt;button type="button" class="btn btn-outline-primary btn-sm active" data-view="pretty">Formatted&lt;/button>
 &lt;button type="button" class="btn btn-outline-primary btn-sm" data-view="tree">Tree&lt;/button>
