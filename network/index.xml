@@ -93,4 +93,38 @@ $('#ipISP').text(d.isp);
 );
 });
 });
-&lt;/script></description></item></channel></rss>
+&lt;/script></description></item><item><title>Network: Network Speed Test</title><link>/network/speed-test/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>/network/speed-test/</guid><description>
+&lt;div id="speed-test" class="container-fluid px-0">
+&lt;p class="lead">Find out how fast your internet connection is.&lt;/p>
+&lt;p>Test provider: Cloudflare. The test connects to this third-party service only after you click Start test, and the provider can see your IP address. Each test downloads about 20 MB and uploads about 5 MB, plus a small amount of protocol overhead. Tests run for up to 90 seconds and can be stopped at any time.&lt;/p>
+&lt;div class="row">
+&lt;div class="col-6 col-lg-3 mb-3">&lt;div class="speed-metric">&lt;h2>Download&lt;/h2>&lt;div>&lt;strong id="speed-download">—&lt;/strong> &lt;span>Mbps&lt;/span>&lt;/div>&lt;/div>&lt;/div>
+&lt;div class="col-6 col-lg-3 mb-3">&lt;div class="speed-metric">&lt;h2>Upload&lt;/h2>&lt;div>&lt;strong id="speed-upload">—&lt;/strong> &lt;span>Mbps&lt;/span>&lt;/div>&lt;/div>&lt;/div>
+&lt;div class="col-6 col-lg-3 mb-3">&lt;div class="speed-metric">&lt;h2>HTTP latency&lt;/h2>&lt;div>&lt;strong id="speed-latency">—&lt;/strong> &lt;span>ms&lt;/span>&lt;/div>&lt;/div>&lt;/div>
+&lt;div class="col-6 col-lg-3 mb-3">&lt;div class="speed-metric">&lt;h2>Jitter&lt;/h2>&lt;div>&lt;strong id="speed-jitter">—&lt;/strong> &lt;span>ms&lt;/span>&lt;/div>&lt;/div>&lt;/div>
+&lt;/div>
+&lt;div class="mb-3">
+&lt;button id="speed-start" class="btn btn-primary" type="button">Start test&lt;/button>
+&lt;button id="speed-stop" class="btn btn-outline-secondary ml-2" type="button" disabled>Stop&lt;/button>
+&lt;/div>
+&lt;progress id="speed-progress" max="10" value="0" aria-label="Speed test progress" style="width:100%">&lt;/progress>
+&lt;p id="speed-status" role="status" aria-live="polite" class="mt-2">Ready. Click Start test to begin.&lt;/p>
+&lt;details class="mt-4">
+&lt;summary>Understanding your results&lt;/summary>
+&lt;ul class="mt-3">
+&lt;li>Mbps means megabits per second. Divide by 8 to convert to MB/s. Download and upload tests transfer fixed amounts of data over a single connection and include request round-trip time.&lt;/li>
+&lt;li>HTTP latency is the average round-trip time of 5 requests after a warm-up request. It includes server processing time and is not ICMP ping. Jitter is the average absolute difference between consecutive latency samples.&lt;/li>
+&lt;li>Results reflect the connection from your browser to Cloudflare and depend on Wi-Fi, proxies, background traffic, and server location. Short samples may underestimate fast connections and do not represent your internet provider's maximum bandwidth.&lt;/li>
+&lt;li>If the connection fails, check your network, proxy, or browser blocking settings and try again. Results from completed stages are kept; unfinished measurements show “—”.&lt;/li>
+&lt;/ul>
+&lt;/details>
+&lt;noscript>&lt;p class="alert alert-warning">Enable JavaScript to use the network speed test.&lt;/p>&lt;/noscript>
+&lt;/div>
+&lt;style>
+#speed-test .speed-metric { height: 100%; padding: 1.25rem; border: 1px solid #dce4e8; border-top: 3px solid #30638e; border-radius: .25rem; background: #f6f9fb; color: #233746; }
+#speed-test .speed-metric h2 { font-size: 1rem; margin-bottom: 1rem; }
+#speed-test .speed-metric strong { font-size: clamp(1.4rem, 3vw, 2.3rem); font-variant-numeric: tabular-nums; }
+#speed-test .speed-metric span { font-size: .85rem; }
+#speed-test summary { cursor: pointer; }
+&lt;/style>
+&lt;script src="/js/speed-test.js" defer>&lt;/script></description></item></channel></rss>
