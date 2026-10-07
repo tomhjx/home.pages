@@ -1,4 +1,82 @@
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Tom's Notebook – Network</title><link>/network/</link><description>Recent content in Network on Tom's Notebook</description><generator>Hugo -- gohugo.io</generator><language>en-us</language><atom:link href="/network/index.xml" rel="self" type="application/rss+xml"/><item><title>Network: Free Proxies used ClashX Configuration</title><link>/network/free-proxies-clashx/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>/network/free-proxies-clashx/</guid><description>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Tom's Notebook – Network</title><link>/network/</link><description>Recent content in Network on Tom's Notebook</description><generator>Hugo -- gohugo.io</generator><language>en-us</language><lastBuildDate>Wed, 07 Oct 2026 00:01:00 +0800</lastBuildDate><atom:link href="/network/index.xml" rel="self" type="application/rss+xml"/><item><title>Network: sellers.json Checker</title><link>/network/sellers-json-checker/</link><pubDate>Wed, 07 Oct 2026 00:01:00 +0800</pubDate><guid>/network/sellers-json-checker/</guid><description>
+&lt;div id="sellers-checker">
+&lt;p class="lead">Check seller identities and compare them with ads.txt declarations.&lt;/p>
+&lt;label for="sellers-domain">Advertising system domain or sellers.json URL&lt;/label>
+&lt;input id="sellers-domain" class="form-control mb-2" placeholder="exchange.example.com" aria-describedby="sellers-domain-help">
+&lt;p id="sellers-domain-help" class="small">Required for joint checks. Enter the advertising system from the first ads.txt field, not the publisher's domain. You are responsible for supplying that system's sellers.json.&lt;/p>
+&lt;button id="sellers-fetch" class="btn btn-outline-primary mb-2" type="button">Fetch sellers.json&lt;/button>
+&lt;a id="sellers-open" class="ml-2" target="_blank" rel="noopener noreferrer" hidden>Open sellers.json&lt;/a>
+&lt;p class="small">Fetch uses HTTPS and requires the target to allow CORS. If blocked, open the file and paste it or choose a local file. No proxy is used. Limit: 20 MiB and 20 seconds.&lt;/p>
+&lt;label for="sellers-text">sellers.json content&lt;/label>
+&lt;textarea id="sellers-text" class="form-control text-monospace mb-2" rows="10" spellcheck="false" placeholder='{"version":"1.0","sellers":[]}'>&lt;/textarea>
+&lt;label for="sellers-file">Choose a sellers.json file (up to 20 MiB)&lt;/label>
+&lt;input id="sellers-file" class="form-control-file mb-4" type="file" accept=".json,application/json">
+&lt;label for="sellers-ads">ads.txt content for joint validation&lt;/label>
+&lt;textarea id="sellers-ads" class="form-control text-monospace mb-2" rows="6" spellcheck="false" placeholder="exchange.example.com, seller-id, DIRECT">&lt;/textarea>
+&lt;label for="sellers-ads-file">Choose an ads.txt file (up to 1 MiB)&lt;/label>
+&lt;input id="sellers-ads-file" class="form-control-file mb-3" type="file" accept=".txt,text/plain">
+&lt;div class="d-flex flex-wrap">
+&lt;button id="sellers-check" class="btn btn-outline-primary mr-2 mb-2" type="button">Check sellers.json&lt;/button>
+&lt;button id="sellers-joint" class="btn btn-primary mr-2 mb-2" type="button">Check with ads.txt&lt;/button>
+&lt;button id="sellers-clear" class="btn btn-outline-secondary mb-2" type="button">Clear&lt;/button>
+&lt;/div>
+&lt;p id="sellers-status" role="status" aria-live="polite">Paste or load your files. Local content stays in your browser.&lt;/p>
+&lt;section id="sellers-results" class="border rounded p-3" aria-labelledby="sellers-heading" hidden>
+&lt;h2 id="sellers-heading" class="h4">Validation results&lt;/h2>
+&lt;p id="sellers-summary" class="font-weight-bold">&lt;/p>&lt;p id="sellers-counts">&lt;/p>
+&lt;div class="table-responsive">&lt;table class="table table-sm">&lt;caption>Findings (up to 500 shown; array indexes start at 0)&lt;/caption>&lt;thead>&lt;tr>&lt;th scope="col">Location&lt;/th>&lt;th scope="col">Level&lt;/th>&lt;th scope="col">Finding&lt;/th>&lt;/tr>&lt;/thead>&lt;tbody id="sellers-findings">&lt;/tbody>&lt;/table>&lt;/div>
+&lt;/section>
+&lt;details class="mt-4">&lt;summary>Scope and interpretation&lt;/summary>
+&lt;p class="mt-3">Validates sellers.json 1.0 fields, seller types, confidentiality flags, duplicate seller IDs, and domain syntax. Confidential sellers may omit name and domain. Missing domains for other sellers are flagged for review because sellers without a web presence may omit them.&lt;/p>
+&lt;p>Joint checks compare exact, case-sensitive account IDs only for the selected advertising system. DIRECT usually corresponds to PUBLISHER or BOTH; RESELLER usually corresponds to INTERMEDIARY or BOTH. Differences are review warnings. For DIRECT records, an explicit OWNERDOMAIN is compared with the published seller domain. Other advertising systems and referred ads.txt files are not checked.&lt;/p>
+&lt;p>This checks supplied declarations, not real authorization or payment relationships. File provenance, public suffix boundaries, DNS, redirect chains, JSON duplicate property names, extension semantics, and the full SupplyChain object are not verified. Unlisted sellers are reported as absent from the supplied file, not globally unauthorized.&lt;/p>
+&lt;a href="https://iabtechlab.com/sellers-json/" target="_blank" rel="noopener noreferrer">IAB Tech Lab specification&lt;/a> · &lt;a href="/network/ads-txt-checker/">ads.txt Checker&lt;/a>
+&lt;/details>
+&lt;noscript>&lt;p class="alert alert-warning">Enable JavaScript to use this checker.&lt;/p>&lt;/noscript>
+&lt;/div>
+&lt;script src="/js/ads-txt.js" defer>&lt;/script>
+&lt;script src="/js/sellers-json.js" defer>&lt;/script>
+&lt;script src="/js/sellers-json-checker.js" defer>&lt;/script></description></item><item><title>Network: ads.txt Checker</title><link>/network/ads-txt-checker/</link><pubDate>Wed, 07 Oct 2026 00:00:00 +0800</pubDate><guid>/network/ads-txt-checker/</guid><description>
+&lt;div id="ads-checker">
+&lt;p class="lead">Inspect your authorized digital seller declarations.&lt;/p>
+&lt;p>Need to verify account declarations against a seller list? Use the &lt;a href="/network/sellers-json-checker/">sellers.json Checker with ads.txt joint validation&lt;/a>.&lt;/p>
+&lt;form id="ads-fetch-form" class="mb-4">
+&lt;label for="ads-domain">Website domain or ads.txt URL&lt;/label>
+&lt;div class="input-group">
+&lt;input id="ads-domain" class="form-control" type="text" placeholder="example.com" required aria-describedby="ads-fetch-help">
+&lt;div class="input-group-append">&lt;button id="ads-fetch" class="btn btn-outline-primary" type="submit">Fetch and check&lt;/button>&lt;/div>
+&lt;/div>
+&lt;p id="ads-fetch-help" class="small mt-2">Fetches /ads.txt over HTTPS on the exact host you enter. Use the root domain unless checking a declared subdomain. The target must allow browser access (CORS). No proxy is used.&lt;/p>
+&lt;a id="ads-open" target="_blank" rel="noopener noreferrer" hidden>Open ads.txt in a new tab&lt;/a>
+&lt;/form>
+&lt;label for="ads-text">ads.txt content&lt;/label>
+&lt;textarea id="ads-text" class="form-control text-monospace" rows="10" spellcheck="false" placeholder="example.com, publisher-id, DIRECT">&lt;/textarea>
+&lt;div class="my-3">
+&lt;button id="ads-check" class="btn btn-primary" type="button">Check content&lt;/button>
+&lt;button id="ads-clear" class="btn btn-outline-secondary ml-2" type="button">Clear&lt;/button>
+&lt;/div>
+&lt;label for="ads-file">Or choose a local text file (up to 1 MiB)&lt;/label>
+&lt;input id="ads-file" class="form-control-file mb-3" type="file" accept=".txt,text/plain">
+&lt;p id="ads-status" role="status" aria-live="polite">Paste content, select a file, or fetch a domain to begin. Local content stays in your browser.&lt;/p>
+&lt;section id="ads-results" class="border rounded p-3 mt-3" aria-labelledby="ads-heading" hidden>
+&lt;h2 id="ads-heading" class="h4">Check results&lt;/h2>
+&lt;p id="ads-summary" class="font-weight-bold">&lt;/p>
+&lt;p id="ads-counts">&lt;/p>
+&lt;div class="table-responsive">
+&lt;table class="table table-sm">&lt;caption>Findings (up to 500 shown)&lt;/caption>&lt;thead>&lt;tr>&lt;th scope="col">Line&lt;/th>&lt;th scope="col">Level&lt;/th>&lt;th scope="col">Finding&lt;/th>&lt;/tr>&lt;/thead>&lt;tbody id="ads-findings">&lt;/tbody>&lt;/table>
+&lt;/div>
+&lt;/section>
+&lt;details class="mt-4">
+&lt;summary>What this checker verifies&lt;/summary>
+&lt;p class="mt-3">Checks the three required seller fields, optional certification ID, DIRECT / RESELLER relationships, comments, duplicate records, and ads.txt 1.1 declarations. Semicolon extension data is recognized but not validated. A certification ID is optional and is not required to be a specific length.&lt;/p>
+&lt;p>This is a syntax check, not an authorization or compliance certification. It does not verify DNS, public suffix boundaries, seller account ownership, sellers.json, certification IDs, country-code assignment, referred files, or redirect-chain compliance. HTTP metadata is checked only for fetched files. Empty files are not treated as proof that no sellers are authorized.&lt;/p>
+&lt;p>If fetching fails, open the file in a new tab and paste its contents here. A browser network or CORS error does not prove that ads.txt is missing.&lt;/p>
+&lt;a href="https://iabtechlab.com/ads-txt/" target="_blank" rel="noopener noreferrer">IAB Tech Lab ads.txt specification&lt;/a>
+&lt;/details>
+&lt;noscript>&lt;p class="alert alert-warning">Enable JavaScript to use this checker.&lt;/p>&lt;/noscript>
+&lt;/div>
+&lt;script src="/js/ads-txt.js" defer>&lt;/script>
+&lt;script src="/js/ads-txt-checker.js" defer>&lt;/script></description></item><item><title>Network: Free Proxies used ClashX Configuration</title><link>/network/free-proxies-clashx/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>/network/free-proxies-clashx/</guid><description>
 &lt;iframe allowfullscreen width="100%" height="500" name="iframe" src="https://f.tomhjx.top/proxy/auto.clashx.yaml" frameborder="0" scrolling="yes" >
 &lt;/iframe>
 &lt;br />
@@ -109,12 +187,21 @@ $('#ipISP').text(d.isp);
 &lt;/div>
 &lt;progress id="speed-progress" max="10" value="0" aria-label="Speed test progress" style="width:100%">&lt;/progress>
 &lt;p id="speed-status" role="status" aria-live="polite" class="mt-2">Ready. Click Start test to begin.&lt;/p>
+&lt;section id="speed-summary" class="border rounded p-3 mt-3" aria-labelledby="speed-summary-heading" aria-live="polite" hidden>
+&lt;h2 id="speed-summary-heading" class="h4">Your connection at a glance&lt;/h2>
+&lt;p id="speed-tier" class="lead">&lt;/p>
+&lt;p id="speed-throughput">&lt;/p>
+&lt;p id="speed-quality">&lt;/p>
+&lt;p class="small mb-0">This is a rough performance estimate, not a detected ISP plan. Wi-Fi, proxies, server distance, and this short single-connection test can lower the result. Repeat over Ethernet with other traffic paused to compare your connection with your subscribed plan.&lt;/p>
+&lt;/section>
 &lt;details class="mt-4">
 &lt;summary>Understanding your results&lt;/summary>
 &lt;ul class="mt-3">
 &lt;li>Mbps means megabits per second. Divide by 8 to convert to MB/s. Download and upload tests transfer fixed amounts of data over a single connection and include request round-trip time.&lt;/li>
 &lt;li>HTTP latency is the average round-trip time of 5 requests after a warm-up request. It includes server processing time and is not ICMP ping. Jitter is the average absolute difference between consecutive latency samples.&lt;/li>
 &lt;li>Results reflect the connection from your browser to Cloudflare and depend on Wi-Fi, proxies, background traffic, and server location. Short samples may underestimate fast connections and do not represent your internet provider's maximum bandwidth.&lt;/li>
+&lt;li>The estimated download tier is the highest of 50, 100, 200, 300, 500, 1,000, or 2,000 Mbps for which measured download speed reaches at least 80% of the nominal rate. Below 40 Mbps, no tier is assigned; at 1,600 Mbps or above, the result is labeled 2 Gbps or higher. These are comparison bands, not proof of a broadband subscription.&lt;/li>
+&lt;li>For a rough comparison, HTTP latency below 50 ms is labeled low, 50–99 ms moderate, and 100 ms or more high. Jitter below 10 ms is labeled low, 10–29 ms moderate, and 30 ms or more high. These few idle HTTP samples do not predict latency under load, packet loss, or gaming performance.&lt;/li>
 &lt;li>If the connection fails, check your network, proxy, or browser blocking settings and try again. Results from completed stages are kept; unfinished measurements show “—”.&lt;/li>
 &lt;/ul>
 &lt;/details>
