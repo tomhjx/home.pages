@@ -1,77 +1,130 @@
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Tom's Notebook – Materiel</title><link>/materiel/</link><description>Recent content in Materiel on Tom's Notebook</description><generator>Hugo -- gohugo.io</generator><language>en-us</language><atom:link href="/materiel/index.xml" rel="self" type="application/rss+xml"/><item><title>Materiel: Image Placeholder</title><link>/materiel/image-placeholder/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>/materiel/image-placeholder/</guid><description>
-&lt;div class="container-fluid">
-&lt;div class="mb-3 row">
-&lt;div class="col-sm input-group">
-&lt;span class="input-group-text">Width&lt;/span>
-&lt;input type="number" class="form-control" id="wInput" value="300" >
-&lt;span class="input-group-text">px&lt;/span>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Tom's Notebook – Materiel</title><link>/materiel/</link><description>Recent content in Materiel on Tom's Notebook</description><generator>Hugo -- gohugo.io</generator><language>en-us</language><atom:link href="/materiel/index.xml" rel="self" type="application/rss+xml"/><item><title>Materiel: Color Palette Picker</title><link>/materiel/color-picker/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>/materiel/color-picker/</guid><description>
+&lt;div id="color-picker" class="container-fluid px-0">
+&lt;p>Choose a color or enter a HEX value to explore matching colors.&lt;/p>
+&lt;div class="row">
+&lt;div class="col-sm-4 mb-3">
+&lt;label for="color-input">Color&lt;/label>
+&lt;input id="color-input" type="color" class="form-control" value="#30638e" style="height:4rem">
 &lt;/div>
-&lt;div class="col-sm input-group">
-&lt;span class="input-group-text">High&lt;/span>
-&lt;input type="number" class="form-control" id="hInput" value="200" >
-&lt;span class="input-group-text">px&lt;/span>
-&lt;/div>
-&lt;div class="col-sm input-group">
-&lt;span class="input-group-text">Background Color&lt;/span>
-&lt;input type="color" class="form-control form-control-color" id="bgColorInput" value="#cccccc" title="Choose your color">
-&lt;/div>
-&lt;div class="col-sm input-group">
-&lt;span class="input-group-text">Text Color&lt;/span>
-&lt;input type="color" class="form-control form-control-color" id="txtColorInput" value="#000000" title="Choose your color">
+&lt;div class="col-sm-8 mb-3">
+&lt;label for="color-hex">HEX input&lt;/label>
+&lt;input id="color-hex" class="form-control" value="#30638E" spellcheck="false" autocomplete="off" aria-describedby="color-help">
+&lt;small id="color-help" class="text-muted">Accepts 3 or 6 hexadecimal digits, with or without #.&lt;/small>
 &lt;/div>
 &lt;/div>
-&lt;div class="mb-3 row">
-&lt;div class="col-sm input-group">
-&lt;span class="input-group-text">Text&lt;/span>
-&lt;input type="text" class="form-control" id="textInput" >
+&lt;div id="color-preview" class="rounded border mb-3" style="height:8rem;background:#30638e" role="img" aria-label="Selected color #30638E">&lt;/div>
+&lt;div id="color-values" class="mb-3">
+&lt;div class="input-group mb-2">&lt;span class="input-group-text">HEX&lt;/span>&lt;input id="color-hex-output" class="form-control" readonly aria-label="HEX value">&lt;button type="button" class="btn btn-outline-primary" data-copy="color-hex-output">Copy HEX&lt;/button>&lt;/div>
+&lt;div class="input-group mb-2">&lt;span class="input-group-text">RGB&lt;/span>&lt;input id="color-rgb-output" class="form-control" readonly aria-label="RGB value">&lt;button type="button" class="btn btn-outline-primary" data-copy="color-rgb-output">Copy RGB&lt;/button>&lt;/div>
+&lt;div class="input-group mb-2">&lt;span class="input-group-text">HSL&lt;/span>&lt;input id="color-hsl-output" class="form-control" readonly aria-label="HSL value">&lt;button type="button" class="btn btn-outline-primary" data-copy="color-hsl-output">Copy HSL&lt;/button>&lt;/div>
+&lt;/div>
+&lt;button id="color-eyedropper" type="button" class="btn btn-outline-primary mb-2" hidden>Pick from screen&lt;/button>
+&lt;p class="small text-muted">Screen picking is available in supported browsers over HTTPS or localhost. Colors are processed locally.&lt;/p>
+&lt;p id="color-status" role="status" aria-live="polite">&lt;/p>
+&lt;h2 class="h4">Color palette&lt;/h2>
+&lt;p class="small">Select a swatch to use its color.&lt;/p>
+&lt;div id="color-palette" class="color-swatches mb-4">&lt;/div>
+&lt;label for="color-harmony">Matching palette&lt;/label>
+&lt;select id="color-harmony" class="form-control mb-3">
+&lt;option value="shades">Shades and tints&lt;/option>
+&lt;option value="analogous">Analogous&lt;/option>
+&lt;option value="complementary">Complementary&lt;/option>
+&lt;option value="triadic">Triadic&lt;/option>
+&lt;/select>
+&lt;div id="color-matches" class="color-swatches">&lt;/div>
+&lt;noscript>&lt;p class="alert alert-warning">Enable JavaScript to use the color picker.&lt;/p>&lt;/noscript>
+&lt;/div>
+&lt;style>
+#color-picker .color-swatches { display:flex; flex-wrap:wrap; gap:.5rem; }
+#color-picker .color-swatch { padding:.25rem; border:1px solid #999; border-radius:.25rem; background:#fff; color:#222; min-width:6rem; }
+#color-picker .color-swatch span { display:block; height:3rem; margin-bottom:.25rem; border-radius:.15rem; }
+#color-picker .color-swatch:focus-visible { outline:3px solid #30638e; outline-offset:2px; }
+&lt;/style>
+&lt;script src="/js/color-picker.js" defer>&lt;/script></description></item><item><title>Materiel: Image Placeholder</title><link>/materiel/image-placeholder/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>/materiel/image-placeholder/</guid><description>
+&lt;div id="image-placeholder" class="container-fluid px-0">
+&lt;form id="placeholder-form">
+&lt;div class="mb-3">
+&lt;label for="sizePreset">Size preset&lt;/label>
+&lt;select id="sizePreset" class="form-control">
+&lt;option value="">Custom&lt;/option>
+&lt;option value="300x200">Card — 300 × 200&lt;/option>
+&lt;option value="640x480">Standard — 640 × 480&lt;/option>
+&lt;option value="1280x720">Widescreen — 1280 × 720&lt;/option>
+&lt;option value="1080x1080">Square — 1080 × 1080&lt;/option>
+&lt;option value="1080x1920">Portrait — 1080 × 1920&lt;/option>
+&lt;option value="1200x630">Social preview — 1200 × 630&lt;/option>
+&lt;/select>
+&lt;/div>
+&lt;div class="row">
+&lt;div class="col-sm-6 col-lg-3 mb-3">
+&lt;label for="wInput">Width (px)&lt;/label>
+&lt;input type="number" class="form-control" id="wInput" value="300" min="1" max="4096" step="1" required>
+&lt;/div>
+&lt;div class="col-sm-6 col-lg-3 mb-3">
+&lt;label for="hInput">Height (px)&lt;/label>
+&lt;input type="number" class="form-control" id="hInput" value="200" min="1" max="4096" step="1" required>
+&lt;/div>
+&lt;div class="col-sm-6 col-lg-3 mb-3">
+&lt;label for="bgColorInput">Background color&lt;/label>
+&lt;input type="color" class="form-control form-control-color" id="bgColorInput" value="#cccccc">
+&lt;/div>
+&lt;div class="col-sm-6 col-lg-3 mb-3">
+&lt;label for="txtColorInput">Text color&lt;/label>
+&lt;input type="color" class="form-control form-control-color" id="txtColorInput" value="#000000">
 &lt;/div>
 &lt;/div>
-&lt;div class="mb-3 row">
-&lt;div class="col p-2">
-&lt;button class="btn btn-outline-primary btn-sm" id="generate">Generate&lt;/button>
+&lt;div class="row">
+&lt;div class="col-sm-6 mb-3">
+&lt;label for="backgroundStyle">Background style&lt;/label>
+&lt;select id="backgroundStyle" class="form-control">
+&lt;option value="solid">Solid&lt;/option>
+&lt;option value="gradient">Diagonal gradient&lt;/option>
+&lt;option value="stripes">Diagonal stripes&lt;/option>
+&lt;option value="grid">Grid&lt;/option>
+&lt;option value="checkerboard">Checkerboard&lt;/option>
+&lt;/select>
+&lt;/div>
+&lt;div class="col-sm-6 mb-3">
+&lt;label for="accentColorInput">Secondary color&lt;/label>
+&lt;input type="color" id="accentColorInput" class="form-control form-control-color" value="#999999" disabled>
 &lt;/div>
 &lt;/div>
-&lt;div class="mb-3 row">
-&lt;img id="preview" class="img-fluid" />
+&lt;div class="mb-3">
+&lt;label for="textInput">Text&lt;/label>
+&lt;textarea class="form-control" id="textInput" rows="3" placeholder="Leave blank to show image dimensions. Use Enter for multiple lines.">&lt;/textarea>
+&lt;/div>
+&lt;div class="row">
+&lt;div class="col-sm-6 mb-3">
+&lt;label for="fontSizeInput">Font size (px, shrinks to fit)&lt;/label>
+&lt;input type="number" class="form-control" id="fontSizeInput" value="24" min="1" max="512" step="1" required>
+&lt;/div>
+&lt;div class="col-sm-6 mb-3 align-self-end">
+&lt;div class="form-check">
+&lt;input type="checkbox" class="form-check-input" id="hideTextInput">
+&lt;label class="form-check-label" for="hideTextInput">Hide text&lt;/label>
 &lt;/div>
 &lt;/div>
-&lt;script>
-$(function(){
-var wInput = $('#wInput');
-var hInput = $('#hInput');
-var textInput = $('#textInput');
-var placeholder = $('&lt;canvas>')
-var bgColorInput = $('#bgColorInput');
-var txtColorInput = $('#txtColorInput');
-var preview = $('#preview');
-function createPlaceholder(width, height, bgColor, textColor, text) {
-const canvas = placeholder.get(0);
-if (canvas.getContext) {
-const ctx = canvas.getContext("2d");
-ctx.clearRect(0, 0, canvas.width, canvas.height);
-canvas.width = width
-canvas.height = height
-// 设置背景颜色
-ctx.fillStyle = bgColor;
-ctx.fillRect(0, 0, width, height);
-// 设置文本样式
-ctx.font = "bold 24px Arial";
-ctx.textAlign = "center";
-ctx.textBaseline = "middle";
-ctx.fillStyle = textColor;
-// 绘制文本
-ctx.fillText(text, width / 2, height / 2);
-preview.attr('src', canvas.toDataURL("image/png"));
-}
-}
-function reset() {
-var txt = textInput.val()
-if (txt.length == 0) {
-txt = wInput.val()+'x'+hInput.val();
-}
-createPlaceholder(wInput.val(), hInput.val(), bgColorInput.val(), txtColorInput.val(), txt);
-}
-$('#generate').click(reset);
-reset();
-});
-&lt;/script></description></item></channel></rss>
+&lt;/div>
+&lt;p class="small text-muted">Preview updates automatically. Dimensions: 1–4096 px per side. Images are generated in your browser.&lt;/p>
+&lt;div class="mb-3">
+&lt;label for="downloadFormat">Download format&lt;/label>
+&lt;select id="downloadFormat" class="form-control">
+&lt;option value="png">PNG&lt;/option>
+&lt;option value="jpg">JPG&lt;/option>
+&lt;option value="webp">WebP&lt;/option>
+&lt;option value="avif">AVIF&lt;/option>
+&lt;/select>
+&lt;small class="text-muted">WebP and AVIF export require browser encoding support. If unavailable, choose PNG or JPG.&lt;/small>
+&lt;/div>
+&lt;div class="mb-3">
+&lt;button class="btn btn-primary" type="submit">Generate&lt;/button>
+&lt;button class="btn btn-outline-primary" id="download" type="button" disabled>Download PNG&lt;/button>
+&lt;/div>
+&lt;/form>
+&lt;p id="placeholder-status" role="status" aria-live="polite">&lt;/p>
+&lt;div class="border rounded p-3 text-center">
+&lt;canvas id="preview" role="img" aria-label="Image placeholder preview" style="max-width:100%; height:auto; vertical-align:middle" hidden>&lt;/canvas>
+&lt;/div>
+&lt;noscript>&lt;p class="alert alert-warning">Enable JavaScript to generate images.&lt;/p>&lt;/noscript>
+&lt;/div>
+&lt;script src="/js/image-placeholder.js" defer>&lt;/script></description></item></channel></rss>
